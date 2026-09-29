@@ -1,0 +1,502 @@
+{
+  "report_title": "Corrected Tamil Nadu Cauvery Delta ROI Validation & Swath Adaptation Report",
+  "generated_at_utc": "2026-09-17T14:00:41Z",
+  "scene_info": {
+    "scene_key": "tn_cauvery_delta_corrected",
+    "name": "Tamil Nadu Cauvery Delta",
+    "split": "Test",
+    "category": "Agricultural",
+    "scene_id": "S2B_44PKT_20250504_0_L2A",
+    "mgrs_tile": "MGRS-44PKT",
+    "asset_urls": {
+      "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B02.tif",
+      "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B03.tif",
+      "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B04.tif",
+      "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B08.tif",
+      "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/SCL.tif"
+    }
+  },
+  "corrected_roi_1": {
+    "window_10m": {
+      "row_off": 1800,
+      "col_off": 7000,
+      "width": 1024,
+      "height": 1024
+    },
+    "window_20m": {
+      "row_off": 900,
+      "col_off": 3500,
+      "width": 512,
+      "height": 512
+    },
+    "band_metadata": {
+      "B02": {
+        "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B02.tif",
+        "http_status": 200,
+        "read_time_ms": 9468.1,
+        "shape": [
+          1024,
+          1024
+        ],
+        "dtype": "uint16",
+        "crs": "EPSG:32644",
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          199980.0,
+          0.0,
+          -10.0,
+          1300020.0
+        ],
+        "bounds": [
+          269980.0,
+          1271780.0,
+          280220.0,
+          1282020.0
+        ],
+        "min_val": 0,
+        "max_val": 4860,
+        "mean_val": 47.52,
+        "nodata_pixels": 993336,
+        "nodata_pct": 94.7319,
+        "valid_pixels": 55240,
+        "valid_pct": 5.2681
+      },
+      "B03": {
+        "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B03.tif",
+        "http_status": 200,
+        "read_time_ms": 13027.3,
+        "shape": [
+          1024,
+          1024
+        ],
+        "dtype": "uint16",
+        "crs": "EPSG:32644",
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          199980.0,
+          0.0,
+          -10.0,
+          1300020.0
+        ],
+        "bounds": [
+          269980.0,
+          1271780.0,
+          280220.0,
+          1282020.0
+        ],
+        "min_val": 0,
+        "max_val": 4776,
+        "mean_val": 61.44,
+        "nodata_pixels": 993336,
+        "nodata_pct": 94.7319,
+        "valid_pixels": 55240,
+        "valid_pct": 5.2681
+      },
+      "B04": {
+        "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B04.tif",
+        "http_status": 200,
+        "read_time_ms": 3893.2,
+        "shape": [
+          1024,
+          1024
+        ],
+        "dtype": "uint16",
+        "crs": "EPSG:32644",
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          199980.0,
+          0.0,
+          -10.0,
+          1300020.0
+        ],
+        "bounds": [
+          269980.0,
+          1271780.0,
+          280220.0,
+          1282020.0
+        ],
+        "min_val": 0,
+        "max_val": 4336,
+        "mean_val": 74.13,
+        "nodata_pixels": 993336,
+        "nodata_pct": 94.7319,
+        "valid_pixels": 55240,
+        "valid_pct": 5.2681
+      },
+      "B08": {
+        "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B08.tif",
+        "http_status": 200,
+        "read_time_ms": 7001.6,
+        "shape": [
+          1024,
+          1024
+        ],
+        "dtype": "uint16",
+        "crs": "EPSG:32644",
+        "resolution": [
+          10.0,
+          10.0
+        ],
+        "transform": [
+          10.0,
+          0.0,
+          199980.0,
+          0.0,
+          -10.0,
+          1300020.0
+        ],
+        "bounds": [
+          269980.0,
+          1271780.0,
+          280220.0,
+          1282020.0
+        ],
+        "min_val": 0,
+        "max_val": 6092,
+        "mean_val": 138.56,
+        "nodata_pixels": 993336,
+        "nodata_pct": 94.7319,
+        "valid_pixels": 55240,
+        "valid_pct": 5.2681
+      },
+      "SCL": {
+        "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/SCL.tif",
+        "http_status": 200,
+        "read_time_ms": 2450.5,
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint8",
+        "crs": "EPSG:32644",
+        "resolution": [
+          20.0,
+          20.0
+        ],
+        "transform": [
+          20.0,
+          0.0,
+          199980.0,
+          0.0,
+          -20.0,
+          1300020.0
+        ],
+        "bounds": [
+          269980.0,
+          1271780.0,
+          280220.0,
+          1282020.0
+        ],
+        "min_val": 0,
+        "max_val": 7,
+        "mean_val": 0.26,
+        "nodata_pixels": 248334,
+        "nodata_pct": 94.7319,
+        "valid_pixels": 13810,
+        "valid_pct": 5.2681
+      }
+    },
+    "spatial_alignment": {
+      "crs": "EPSG:32644",
+      "bounds_10m": [
+        269980.0,
+        1271780.0,
+        280220.0,
+        1282020.0
+      ],
+      "bounds_20m": [
+        269980.0,
+        1271780.0,
+        280220.0,
+        1282020.0
+      ],
+      "bounds_match": true
+    },
+    "scl_quality_audit": {
+      "valid_surface_pixels": 13810,
+      "valid_surface_pct": 5.2681,
+      "total_cloud_shadow_pixels": 0,
+      "total_cloud_shadow_pct": 0.0,
+      "nodata_pixels": 248334,
+      "nodata_pct": 94.7319,
+      "breakdown": {
+        "no_data_class_0_pct": 94.7319,
+        "saturated_class_1_pct": 0.0,
+        "cloud_shadow_class_3_pct": 0.0,
+        "medium_cloud_class_8_pct": 0.0,
+        "high_cloud_class_9_pct": 0.0,
+        "thin_cirrus_class_10_pct": 0.0
+      },
+      "passes_quality_gate": false,
+      "meaningful_agricultural_land": false
+    },
+    "scl_histogram": {
+      "class_0_NO_DATA": {
+        "count": 248334,
+        "percentage": 94.7319,
+        "is_valid": false
+      },
+      "class_1_SATURATED_OR_DEFECTIVE": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": false
+      },
+      "class_2_DARK_AREA_PIXELS": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": true
+      },
+      "class_3_CLOUD_SHADOWS": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": false
+      },
+      "class_4_VEGETATION": {
+        "count": 1979,
+        "percentage": 0.7549,
+        "is_valid": true
+      },
+      "class_5_NOT_VEGETATED": {
+        "count": 11303,
+        "percentage": 4.3118,
+        "is_valid": true
+      },
+      "class_6_WATER": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": true
+      },
+      "class_7_UNCLASSIFIED": {
+        "count": 528,
+        "percentage": 0.2014,
+        "is_valid": true
+      },
+      "class_8_CLOUD_MEDIUM_PROBABILITY": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": false
+      },
+      "class_9_CLOUD_HIGH_PROBABILITY": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": false
+      },
+      "class_10_THIN_CIRRUS": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": false
+      },
+      "class_11_SNOW_ICE": {
+        "count": 0,
+        "percentage": 0.0,
+        "is_valid": true
+      }
+    },
+    "measured_file_sizes": {
+      "geotiff_4band_10m_bytes": 410771,
+      "geotiff_4band_10m_mb": 0.39,
+      "geotiff_scl_20m_bytes": 4080,
+      "geotiff_scl_20m_mb": 0.0,
+      "geotiff_total_pair_bytes": 414851,
+      "geotiff_total_pair_mb": 0.4,
+      "compressed_npz_bytes": 370949,
+      "compressed_npz_mb": 0.35
+    },
+    "diagnostic_visualization_path": "data/sample_rois\\diagnostic_tn_cauvery_delta_corrected.png"
+  },
+  "cauvery_delta_three_rois_plan": [
+    {
+      "roi_id": "ROI_1_Initial_Probe_7000",
+      "name": "Cauvery Delta North (Initial Test at col 7000)",
+      "window_10m": {
+        "row_off": 1800,
+        "col_off": 7000,
+        "width": 1024,
+        "height": 1024
+      },
+      "window_20m": {
+        "row_off": 900,
+        "col_off": 3500,
+        "width": 512,
+        "height": 512
+      },
+      "bounds_utm": [
+        269980.0,
+        1271780.0,
+        280220.0,
+        1282020.0
+      ],
+      "valid_surface_pct": 5.27,
+      "nodata_pct": 94.73,
+      "cloud_shadow_pct": 0.0,
+      "landcover": {
+        "vegetation_pct": 0.75,
+        "soil_cropland_pct": 4.31,
+        "water_canals_pct": 0.0
+      },
+      "passes_quality_gate": false
+    },
+    {
+      "roi_id": "ROI_1_North_Adapted",
+      "name": "Cauvery Delta North (Swath Adapted at col 8500)",
+      "window_10m": {
+        "row_off": 1800,
+        "col_off": 8500,
+        "width": 1024,
+        "height": 1024
+      },
+      "window_20m": {
+        "row_off": 900,
+        "col_off": 4250,
+        "width": 512,
+        "height": 512
+      },
+      "bounds_utm": [
+        284980.0,
+        1271780.0,
+        295220.0,
+        1282020.0
+      ],
+      "valid_surface_pct": 100.0,
+      "nodata_pct": 0.0,
+      "cloud_shadow_pct": 0.0,
+      "landcover": {
+        "vegetation_pct": 18.82,
+        "soil_cropland_pct": 80.86,
+        "water_canals_pct": 0.0
+      },
+      "passes_quality_gate": true
+    },
+    {
+      "roi_id": "ROI_2_Central",
+      "name": "Cauvery Delta Central (Irrigated Basin at col 7500)",
+      "window_10m": {
+        "row_off": 5000,
+        "col_off": 7500,
+        "width": 1024,
+        "height": 1024
+      },
+      "window_20m": {
+        "row_off": 2500,
+        "col_off": 3750,
+        "width": 512,
+        "height": 512
+      },
+      "bounds_utm": [
+        274980.0,
+        1239780.0,
+        285220.0,
+        1250020.0
+      ],
+      "valid_surface_pct": 100.0,
+      "nodata_pct": 0.0,
+      "cloud_shadow_pct": 0.0,
+      "landcover": {
+        "vegetation_pct": 11.02,
+        "soil_cropland_pct": 87.89,
+        "water_canals_pct": 0.5
+      },
+      "passes_quality_gate": true
+    },
+    {
+      "roi_id": "ROI_3_South",
+      "name": "Cauvery Delta South (Deltaic Cultivation at col 8000)",
+      "window_10m": {
+        "row_off": 8000,
+        "col_off": 8000,
+        "width": 1024,
+        "height": 1024
+      },
+      "window_20m": {
+        "row_off": 4000,
+        "col_off": 4000,
+        "width": 512,
+        "height": 512
+      },
+      "bounds_utm": [
+        279980.0,
+        1209780.0,
+        290220.0,
+        1220020.0
+      ],
+      "valid_surface_pct": 100.0,
+      "nodata_pct": 0.0,
+      "cloud_shadow_pct": 0.0,
+      "landcover": {
+        "vegetation_pct": 22.84,
+        "soil_cropland_pct": 75.09,
+        "water_canals_pct": 1.33
+      },
+      "passes_quality_gate": true
+    }
+  ],
+  "storage_budget_recalculation": {
+    "valid_samples_measured": [
+      {
+        "name": "Delhi NCR (Urban)",
+        "geotiff_mb": 5.87,
+        "geotiff_bytes": 6152388,
+        "npz_mb": 5.91,
+        "npz_bytes": 6198584
+      },
+      {
+        "name": "Punjab Ludhiana (Agri)",
+        "geotiff_mb": 5.66,
+        "geotiff_bytes": 5933673,
+        "npz_mb": 5.62,
+        "npz_bytes": 5889766
+      },
+      {
+        "name": "TN Cauvery Delta Valid Swath (Agri)",
+        "geotiff_mb": 5.78,
+        "geotiff_bytes": 6063077,
+        "npz_mb": 5.86,
+        "npz_bytes": 6144245
+      }
+    ],
+    "summary_metrics_geotiff_mb": {
+      "mean": 5.77,
+      "max": 5.87,
+      "min": 5.66
+    },
+    "summary_metrics_npz_mb": {
+      "mean": 5.8,
+      "max": 5.91,
+      "min": 5.62
+    },
+    "projected_42_rois_geotiff_mb": {
+      "nominal_mean_total_mb": 242.3,
+      "worst_case_max_total_mb": 246.5,
+      "with_10pct_safety_margin_mb": 266.6,
+      "with_20pct_safety_margin_mb": 290.8
+    },
+    "headroom_against_250mb_cap": {
+      "nominal_headroom_mb": 7.7,
+      "nominal_headroom_pct": 3.06,
+      "worst_case_headroom_mb": 3.5,
+      "worst_case_headroom_pct": 1.38,
+      "exceeds_at_10pct_margin": true,
+      "exceeds_at_20pct_margin": true
+    },
+    "budget_verdict_and_risk_mitigation": {
+      "is_compliant_nominally": true,
+      "margin_status": "HIGH RISK at +10% and +20% contingency margins",
+      "recommended_mitigation": "Either compress using NPZ with float16 or int16, adjust ROI count to 35-38, or reduce patch border padding if strict 250 MB ceiling is enforced."
+    }
+  }
+}

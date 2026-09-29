@@ -1,0 +1,72 @@
+[
+  {
+    "class_code": 4,
+    "class_name": "Vegetation",
+    "pixel_count": 1440768,
+    "area_pct": 34.3505859375,
+    "mean_reliability": 0.9505779147148132,
+    "median_reliability": 0.956629753112793,
+    "min_reliability": 0.13970449566841125,
+    "delta_vs_scene": -0.00014716386795043945,
+    "recon_score": 0.9249697923660278,
+    "spectral_score": 0.8893779516220093,
+    "spatial_score": 0.99844890832901,
+    "stability_score": 1.0
+  },
+  {
+    "class_code": 5,
+    "class_name": "Not-Vegetated / Urban / Soil",
+    "pixel_count": 2722624,
+    "area_pct": 64.91241455078125,
+    "mean_reliability": 0.9512813687324524,
+    "median_reliability": 0.9586278796195984,
+    "min_reliability": 0.10885912925004959,
+    "delta_vs_scene": 0.0005562901496887207,
+    "recon_score": 0.9241968393325806,
+    "spectral_score": 0.8955630660057068,
+    "spatial_score": 0.9975879788398743,
+    "stability_score": 1.0
+  },
+  {
+    "class_code": 6,
+    "class_name": "Water",
+    "pixel_count": 30784,
+    "area_pct": 0.73394775390625,
+    "mean_reliability": 0.9086107611656189,
+    "median_reliability": 0.9293781518936157,
+    "min_reliability": 0.26926732063293457,
+    "delta_vs_scene": -0.042114317417144775,
+    "recon_score": 0.8961793780326843,
+    "spectral_score": 0.7900583744049072,
+    "spatial_score": 0.9941380620002747,
+    "stability_score": 1.0
+  },
+  {
+    "class_code": 7,
+    "class_name": "Unclassified",
+    "pixel_count": 128,
+    "area_pct": 0.0030517578125,
+    "mean_reliability": 0.9009979367256165,
+    "median_reliability": 0.9044252634048462,
+    "min_reliability": 0.8432459235191345,
+    "delta_vs_scene": -0.04972714185714722,
+    "recon_score": 0.8328975439071655,
+    "spectral_score": 0.7939987182617188,
+    "spatial_score": 0.9986496567726135,
+    "stability_score": 1.0
+  },
+  {
+    "class_code": -1,
+    "class_name": "Water-Land Transition Boundary",
+    "pixel_count": 9472,
+    "area_pct": 0.225830078125,
+    "mean_reliability": 0.8804075121879578,
+    "median_reliability": 0.9348161220550537,
+    "min_reliability": 0.25231868028640747,
+    "delta_vs_scene": -0.07031756639480591,
+    "recon_score": 0.799971342086792,
+    "spectral_score": 0.8448941111564636,
+    "spatial_score": 0.9806124567985535,
+    "stability_score": 1.0
+  }
+]

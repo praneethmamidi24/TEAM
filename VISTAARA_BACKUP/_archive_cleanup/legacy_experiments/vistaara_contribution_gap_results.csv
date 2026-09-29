@@ -1,0 +1,9 @@
+category,item_name,metric_1_name,metric_1_value,metric_2_name,metric_2_value,metric_3_name,metric_3_value,metric_4_name,metric_4_value,metric_5_name,metric_5_value
+Controlled Failure Injection,Checkerboard / High-Frequency Ringing,Reliability Drop,0.3255,Contrast Ratio,28.76,Primary Detector,Spatial,Detected by VISTAARA,True,Detected by SEN2SR LAM,False
+Controlled Failure Injection,Severe Spectral Band Skew,Reliability Drop,0.8843,Contrast Ratio,78.13,Primary Detector,Recon,Detected by VISTAARA,True,Detected by SEN2SR LAM,False
+Controlled Failure Injection,Local Structural Edge Displacement,Reliability Drop,0.2931,Contrast Ratio,25.9,Primary Detector,Recon,Detected by VISTAARA,True,Detected by SEN2SR LAM,False
+Controlled Failure Injection,Radiometric Shift / Brightness Jump,Reliability Drop,0.8996,Contrast Ratio,79.49,Primary Detector,Recon,Detected by VISTAARA,True,Detected by SEN2SR LAM,False
+Controlled Failure Injection,Subtle Gaussian Perturbation,Reliability Drop,0.1492,Contrast Ratio,13.18,Primary Detector,Recon,Detected by VISTAARA,True,Detected by SEN2SR LAM,False
+Controlled Failure Injection,Zero-Mean Texture Hallucination,Reliability Drop,0.0515,Contrast Ratio,4.55,Primary Detector,Spatial,Detected by VISTAARA,True,Detected by SEN2SR LAM,False
+Downstream Urban Decision,Urban Impervious Delineation,Pathway A Precision %,97.21,Pathway C Precision %,97.61,Precision Gain %,0.4,False Alarm Reduction %,18.99,True Positive Retained %,94.82
+Computational Tractability,Scene Evaluation Time,VISTAARA Full Scene (s),9.218,SEN2SR LAM Patch (s),9.54,SEN2SR Full Scene Stride 32 (h),10.86,Dense Output Mask,"VISTAARA=Yes, LAM=No",N/A,N/A

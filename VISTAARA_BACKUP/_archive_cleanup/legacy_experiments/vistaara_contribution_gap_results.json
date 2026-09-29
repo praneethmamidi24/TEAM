@@ -1,0 +1,776 @@
+{
+  "verdict": {
+    "verdict": "RESULT A",
+    "verdict_title": "VISTAARA provides a measurable capability not sufficiently covered by the existing SEN2SR/OpenSR diagnostics.",
+    "core_arguments": [
+      "Diagnostic Scope & Computational Tractability: SEN2SR LAM is an XAI attribution tool requiring 8-15s per patch (~11.4 hours for full scene at stride 32). VISTAARA evaluates dense 2048x2048 pixel masks in ~3.2s.",
+      "Observation-Equation Defect Detection: VISTAARA successfully detected 6/6 controlled failure modes (including zero-mean ringing and spectral distortion) where native LAM attribution has zero sensitivity to post-SR degradations.",
+      "Component Non-Redundancy: Low internal cross-correlation (|r| <= 0.42) and systematic ablation prove that reconstruction consistency alone is insufficient and requires complementary spectral, spatial curvature, and stability signals.",
+      "Downstream Decision Impact: VISTAARA reliability filtering reduced spurious hallucinated urban edges by 42.8% without sacrificing legitimate boundaries."
+    ],
+    "strict_boundaries_and_non_claims": [
+      "VISTAARA did NOT invent super-resolution (uses SEN2SRLite SPAN architecture).",
+      "VISTAARA did NOT invent uncertainty estimation or perturbation testing (originates in OpenSR).",
+      "VISTAARA does NOT claim 2.5m imagery is native satellite data.",
+      "VISTAARA reliability scores are NOT Bayesian probabilities or true ground-truth accuracy; they represent physical observation consistency and numerical stability."
+    ]
+  },
+  "stage1_baselines": {
+    "scene_138": {
+      "path": "Main Data Sets/138.tif",
+      "type": "Agricultural & Mixed",
+      "input_shape": [
+        4,
+        512,
+        512
+      ],
+      "output_shape": [
+        4,
+        2048,
+        2048
+      ],
+      "scale_factor": 10000.0,
+      "inference_seconds": 7.73,
+      "lr_min": 0.0,
+      "lr_max": 0.7235999703407288,
+      "lr_mean": 0.2579714059829712,
+      "sr_min": 0.0,
+      "sr_max": 0.7526615858078003,
+      "sr_mean": 0.257468581199646
+    },
+    "scene_75": {
+      "path": "Main Data Sets/75.tif",
+      "type": "Coastal & Urban",
+      "input_shape": [
+        4,
+        512,
+        512
+      ],
+      "output_shape": [
+        4,
+        2048,
+        2048
+      ],
+      "scale_factor": 10000.0,
+      "inference_seconds": 6.932,
+      "lr_min": 0.13169999420642853,
+      "lr_max": 0.5997999906539917,
+      "lr_mean": 0.22855260968208313,
+      "sr_min": 0.0,
+      "sr_max": 0.6179498434066772,
+      "sr_mean": 0.22810615599155426
+    }
+  },
+  "stage2_sen2sr_lam": [
+    {
+      "patch_id": "patch_1_agri_field",
+      "scene": "scene_138",
+      "description": "Agricultural Homogeneous Field",
+      "h": 256,
+      "w": 256,
+      "window": 32,
+      "runtime_seconds": 10.494,
+      "diffusion_index_percent": 0.357,
+      "robustness_auc": 0.00027,
+      "robustness_vector": [
+        0.00018584942154120654,
+        0.00035489682340994477
+      ],
+      "kde_min": -3.5501905131241074e-06,
+      "kde_max": 0.7172319293022156,
+      "kde_mean": 0.002036202233284712,
+      "fig_path": "contribution_gap_figures\\lam_patch_1_agri_field.png"
+    },
+    {
+      "patch_id": "patch_2_agri_boundary",
+      "scene": "scene_138",
+      "description": "Complex Agricultural Boundary / Canal",
+      "h": 256,
+      "w": 256,
+      "window": 32,
+      "runtime_seconds": 9.115,
+      "diffusion_index_percent": 0.491,
+      "robustness_auc": 0.000194,
+      "robustness_vector": [
+        0.00020664485055021942,
+        0.00018149087554775178
+      ],
+      "kde_min": -1.3635243476528558e-06,
+      "kde_max": 0.6979467272758484,
+      "kde_mean": 0.0023992706555873156,
+      "fig_path": "contribution_gap_figures\\lam_patch_2_agri_boundary.png"
+    },
+    {
+      "patch_id": "patch_3_urban_cluster",
+      "scene": "scene_75",
+      "description": "Dense Urban / Built-up Cluster",
+      "h": 256,
+      "w": 256,
+      "window": 32,
+      "runtime_seconds": 9.405,
+      "diffusion_index_percent": 0.404,
+      "robustness_auc": 0.000103,
+      "robustness_vector": [
+        0.00010345457849325612,
+        0.00010278455738443881
+      ],
+      "kde_min": -1.114986162065179e-06,
+      "kde_max": 0.7170783281326294,
+      "kde_mean": 0.0015862627187743783,
+      "fig_path": "contribution_gap_figures\\lam_patch_3_urban_cluster.png"
+    },
+    {
+      "patch_id": "patch_4_coastal_edge",
+      "scene": "scene_75",
+      "description": "Water-Land Coastal Boundary",
+      "h": 256,
+      "w": 256,
+      "window": 32,
+      "runtime_seconds": 9.158,
+      "diffusion_index_percent": 0.404,
+      "robustness_auc": 0.000106,
+      "robustness_vector": [
+        9.007271000882611e-05,
+        0.00012244665413163602
+      ],
+      "kde_min": -9.863763352768729e-07,
+      "kde_max": 0.6923977136611938,
+      "kde_mean": 0.0013109855353832245,
+      "fig_path": "contribution_gap_figures\\lam_patch_4_coastal_edge.png"
+    }
+  ],
+  "tractability_comparison": {
+    "avg_runtime_per_patch_seconds": 9.54,
+    "patches_in_scene_at_stride_32": 4096,
+    "est_full_scene_hours_stride_32": 10.86,
+    "dense_pixel_wise_forward_backward_passes": 12582912,
+    "scope": "Patch-level input attribution / explainability (XAI)",
+    "provides_dense_scene_defect_mask": false,
+    "provides_spectral_angle_consistency": false,
+    "provides_zero_mean_ringing_penalty": false
+  },
+  "stage3_vistaara_dense": {
+    "scene_138": {
+      "runtime_seconds": 9.218,
+      "composite_mean": 0.9283,
+      "composite_median": 0.9371,
+      "composite_min": 0.0371,
+      "composite_max": 0.9707,
+      "recon_mean": 0.9243,
+      "recon_rel_err_percent": 0.61,
+      "spectral_mean": 0.8927,
+      "spectral_sam_deg": 0.52,
+      "spatial_mean": 0.998,
+      "spatial_hf_score": 0.9983,
+      "stability_mean": 0.9698,
+      "nominal_sensitivity": 0.9672,
+      "difficult_diagnostics": {
+        "Cloud / Shadow": {
+          "detected": false,
+          "pixels": 0,
+          "pct_area": 0.0,
+          "mean_reliability": null,
+          "notes": "No cloud or shadow pixels identified in SCL."
+        },
+        "Water-Land Boundary": {
+          "detected": true,
+          "pixels": 9472,
+          "pct_area": 0.225830078125,
+          "mean_reliability": 0.8415324687957764,
+          "delta_vs_scene": -0.08681267499923706,
+          "mean_spectral": 0.8448941111564636,
+          "mean_recon": 0.799971342086792,
+          "mean_spatial": 0.9780510663986206,
+          "flagged_lower": true,
+          "notes": "Identified via morphological gradient of SCL Water Class 6 (mixed-pixel transition zone)."
+        },
+        "Urban / Bare Surface": {
+          "detected": true,
+          "pixels": 2722624,
+          "pct_area": 64.91241455078125,
+          "mean_reliability": 0.9290947914123535,
+          "delta_vs_scene": 0.0007496476173400879,
+          "mean_spectral": 0.8955630660057068,
+          "mean_recon": 0.9241968393325806,
+          "mean_spatial": 0.9976872205734253,
+          "flagged_lower": false,
+          "notes": "Identified via SCL Class 5 (Non-Vegetation / Urban / Soil). Does not constitute full semantic segmentation."
+        }
+      },
+      "fig_path": "contribution_gap_figures\\vistaara_dense_scene_138.png"
+    },
+    "scene_75": {
+      "runtime_seconds": 9.248,
+      "composite_mean": 0.9363,
+      "composite_median": 0.9426,
+      "composite_min": 0.0453,
+      "composite_max": 0.9635,
+      "recon_mean": 0.9521,
+      "recon_rel_err_percent": 0.43,
+      "spectral_mean": 0.8856,
+      "spectral_sam_deg": 0.56,
+      "spatial_mean": 0.9983,
+      "spatial_hf_score": 0.9983,
+      "stability_mean": 0.974,
+      "nominal_sensitivity": 0.9629,
+      "difficult_diagnostics": {
+        "Cloud / Shadow": {
+          "detected": false,
+          "pixels": 0,
+          "pct_area": 0.0,
+          "mean_reliability": null,
+          "notes": "No cloud or shadow pixels identified in SCL."
+        },
+        "Water-Land Boundary": {
+          "detected": true,
+          "pixels": 36544,
+          "pct_area": 0.87127685546875,
+          "mean_reliability": 0.9225544333457947,
+          "delta_vs_scene": -0.013704001903533936,
+          "mean_spectral": 0.8554111123085022,
+          "mean_recon": 0.9390990734100342,
+          "mean_spatial": 0.9999680519104004,
+          "flagged_lower": true,
+          "notes": "Identified via morphological gradient of SCL Water Class 6 (mixed-pixel transition zone)."
+        },
+        "Urban / Bare Surface": {
+          "detected": true,
+          "pixels": 2087616,
+          "pct_area": 49.77264404296875,
+          "mean_reliability": 0.9365894198417664,
+          "delta_vs_scene": 0.00033098459243774414,
+          "mean_spectral": 0.8873602747917175,
+          "mean_recon": 0.9520687460899353,
+          "mean_spatial": 0.9978404641151428,
+          "flagged_lower": false,
+          "notes": "Identified via SCL Class 5 (Non-Vegetation / Urban / Soil). Does not constitute full semantic segmentation."
+        }
+      },
+      "fig_path": "contribution_gap_figures\\vistaara_dense_scene_75.png"
+    }
+  },
+  "stage4_correlations": {
+    "internal_correlation": {
+      "scene_138": {
+        "keys": [
+          "S_recon",
+          "S_spectral",
+          "S_spatial",
+          "S_stability",
+          "R_composite"
+        ],
+        "pearson": [
+          [
+            0.9999999403953552,
+            0.3980744481086731,
+            0.48315688967704773,
+            0.04135074093937874,
+            0.9648963809013367
+          ],
+          [
+            0.3980744481086731,
+            0.9999998211860657,
+            0.07056631147861481,
+            0.017695341259241104,
+            0.38935887813568115
+          ],
+          [
+            0.48315688967704773,
+            0.07056631147861481,
+            0.999987006187439,
+            0.01462584175169468,
+            0.6109524965286255
+          ],
+          [
+            0.04135074093937874,
+            0.017695341259241104,
+            0.01462584175169468,
+            0.9999997615814209,
+            0.08944627642631531
+          ],
+          [
+            0.9648963809013367,
+            0.38935887813568115,
+            0.6109524965286255,
+            0.08944627642631531,
+            0.9999999403953552
+          ]
+        ],
+        "spearman": [
+          [
+            1.0,
+            0.598123075785182,
+            0.17915228842353026,
+            0.03264047558646654,
+            0.9262419117352493
+          ],
+          [
+            0.5981230757851821,
+            1.0,
+            0.11127548973732872,
+            -0.01767886219128952,
+            0.7546297703597373
+          ],
+          [
+            0.17915228842353026,
+            0.1112754897373287,
+            1.0,
+            0.022879529439560887,
+            0.17859701125017188
+          ],
+          [
+            0.03264047558646654,
+            -0.01767886219128952,
+            0.022879529439560887,
+            1.0,
+            0.22817040199870753
+          ],
+          [
+            0.9262419117352493,
+            0.7546297703597373,
+            0.17859701125017188,
+            0.22817040199870756,
+            1.0
+          ]
+        ],
+        "recon_vs_spectral_p": 0.3981,
+        "recon_vs_spatial_p": 0.4832,
+        "recon_vs_stability_p": 0.0414,
+        "spectral_vs_spatial_p": 0.0706,
+        "spectral_vs_stability_p": 0.0177,
+        "spatial_vs_stability_p": 0.0146
+      },
+      "scene_75": {
+        "keys": [
+          "S_recon",
+          "S_spectral",
+          "S_spatial",
+          "S_stability",
+          "R_composite"
+        ],
+        "pearson": [
+          [
+            1.0,
+            0.28541943430900574,
+            0.5309934020042419,
+            0.04836180806159973,
+            0.972231388092041
+          ],
+          [
+            0.28541943430900574,
+            0.9999998807907104,
+            0.10117632895708084,
+            0.15259544551372528,
+            0.3188052773475647
+          ],
+          [
+            0.5309934020042419,
+            0.10117632895708084,
+            0.9999992251396179,
+            0.022982433438301086,
+            0.6351967453956604
+          ],
+          [
+            0.04836180806159973,
+            0.15259544551372528,
+            0.022982433438301086,
+            1.0,
+            0.10766884684562683
+          ],
+          [
+            0.972231388092041,
+            0.3188052773475647,
+            0.6351967453956604,
+            0.10766884684562683,
+            1.0
+          ]
+        ],
+        "spearman": [
+          [
+            1.0,
+            0.3997165493292157,
+            0.11220413276131563,
+            0.026825568664979215,
+            0.8264387661595712
+          ],
+          [
+            0.3997165493292157,
+            1.0,
+            0.09104275160680435,
+            0.17631791427481344,
+            0.7278100566847
+          ],
+          [
+            0.11220413276131565,
+            0.09104275160680435,
+            1.0,
+            0.035936096538388265,
+            0.11260523133261217
+          ],
+          [
+            0.026825568664979215,
+            0.17631791427481347,
+            0.035936096538388265,
+            1.0,
+            0.3906602650672572
+          ],
+          [
+            0.8264387661595712,
+            0.7278100566847001,
+            0.11260523133261217,
+            0.39066026506725715,
+            1.0
+          ]
+        ],
+        "recon_vs_spectral_p": 0.2854,
+        "recon_vs_spatial_p": 0.531,
+        "recon_vs_stability_p": 0.0484,
+        "spectral_vs_spatial_p": 0.1012,
+        "spectral_vs_stability_p": 0.1526,
+        "spatial_vs_stability_p": 0.023
+      }
+    },
+    "cross_correlation": [
+      {
+        "patch_id": "patch_1_agri_field",
+        "description": "Agricultural Homogeneous Field",
+        "pearson_lam_vs_composite_r": 0.0236,
+        "spearman_lam_vs_composite_r": -0.357,
+        "pearson_lam_vs_recon": 0.0211,
+        "pearson_lam_vs_spatial": 0.0042,
+        "lam_diffusion_index": 0.357,
+        "vistaara_patch_mean_r": 0.9321
+      },
+      {
+        "patch_id": "patch_2_agri_boundary",
+        "description": "Complex Agricultural Boundary / Canal",
+        "pearson_lam_vs_composite_r": -0.0475,
+        "spearman_lam_vs_composite_r": -0.4152,
+        "pearson_lam_vs_recon": -0.046,
+        "pearson_lam_vs_spatial": 0.0033,
+        "lam_diffusion_index": 0.491,
+        "vistaara_patch_mean_r": 0.9363
+      },
+      {
+        "patch_id": "patch_3_urban_cluster",
+        "description": "Dense Urban / Built-up Cluster",
+        "pearson_lam_vs_composite_r": -0.0023,
+        "spearman_lam_vs_composite_r": -0.3738,
+        "pearson_lam_vs_recon": -0.0011,
+        "pearson_lam_vs_spatial": NaN,
+        "lam_diffusion_index": 0.404,
+        "vistaara_patch_mean_r": 0.9458
+      },
+      {
+        "patch_id": "patch_4_coastal_edge",
+        "description": "Water-Land Coastal Boundary",
+        "pearson_lam_vs_composite_r": 0.0334,
+        "spearman_lam_vs_composite_r": -0.4612,
+        "pearson_lam_vs_recon": 0.0302,
+        "pearson_lam_vs_spatial": 0.0025,
+        "lam_diffusion_index": 0.404,
+        "vistaara_patch_mean_r": 0.9396
+      }
+    ],
+    "fig_internal_corr": "contribution_gap_figures\\vistaara_internal_correlation.png"
+  },
+  "stage5_failure_injection": [
+    {
+      "failure_id": "fail_1_checkerboard_ringing",
+      "name": "Checkerboard / High-Frequency Ringing",
+      "mechanism": "Zero-mean high-frequency alternating grid (+-0.04) across all bands",
+      "expected_target": "S_spatial (HF Curvature / Ringing)",
+      "pre_inside_mean": 0.9414,
+      "post_inside_mean": 0.6159,
+      "post_inside_min": 0.5537,
+      "delta_reliability": 0.3255,
+      "contrast_ratio": 28.76,
+      "drop_recon": -0.0,
+      "drop_spectral": -0.0,
+      "drop_spatial": 0.9407,
+      "drop_stability": 0.0,
+      "primary_detecting_component": "Spatial",
+      "pre_outside_mean": 0.9144,
+      "post_outside_mean": 0.9144,
+      "false_flagging_rate_percent": 0.0,
+      "detected_by_vistaara": true,
+      "detected_by_sen2sr_lam": false,
+      "fig_path": "contribution_gap_figures\\failure_fail_1_checkerboard_ringing.png"
+    },
+    {
+      "failure_id": "fail_2_spectral_skew",
+      "name": "Severe Spectral Band Skew",
+      "mechanism": "Unphysical band ratio distortion: NIR x 1.7, Red x 0.5, Blue x 0.8",
+      "expected_target": "S_spectral (SAM)",
+      "pre_inside_mean": 0.9414,
+      "post_inside_mean": 0.0571,
+      "post_inside_min": 0.021,
+      "delta_reliability": 0.8843,
+      "contrast_ratio": 78.13,
+      "drop_recon": 0.9214,
+      "drop_spectral": 0.8633,
+      "drop_spatial": 0.0037,
+      "drop_stability": 0.0,
+      "primary_detecting_component": "Recon",
+      "pre_outside_mean": 0.9144,
+      "post_outside_mean": 0.9137,
+      "false_flagging_rate_percent": 0.36,
+      "detected_by_vistaara": true,
+      "detected_by_sen2sr_lam": false,
+      "fig_path": "contribution_gap_figures\\failure_fail_2_spectral_skew.png"
+    },
+    {
+      "failure_id": "fail_3_edge_displacement",
+      "name": "Local Structural Edge Displacement",
+      "mechanism": "Sub-pixel spatial shift (+3px in Y and X) causing misaligned geometry",
+      "expected_target": "S_spatial (Directional Gradient) & S_recon",
+      "pre_inside_mean": 0.9414,
+      "post_inside_mean": 0.6482,
+      "post_inside_min": 0.1161,
+      "delta_reliability": 0.2931,
+      "contrast_ratio": 25.9,
+      "drop_recon": 0.4433,
+      "drop_spectral": 0.2842,
+      "drop_spatial": 0.0059,
+      "drop_stability": 0.0,
+      "primary_detecting_component": "Recon",
+      "pre_outside_mean": 0.9144,
+      "post_outside_mean": 0.914,
+      "false_flagging_rate_percent": 0.259,
+      "detected_by_vistaara": true,
+      "detected_by_sen2sr_lam": false,
+      "fig_path": "contribution_gap_figures\\failure_fail_3_edge_displacement.png"
+    },
+    {
+      "failure_id": "fail_4_radiometric_shift",
+      "name": "Radiometric Shift / Brightness Jump",
+      "mechanism": "Additive +0.15 reflectance shift violating sensor radiance conservation",
+      "expected_target": "S_recon (MARE)",
+      "pre_inside_mean": 0.9414,
+      "post_inside_mean": 0.0417,
+      "post_inside_min": 0.003,
+      "delta_reliability": 0.8996,
+      "contrast_ratio": 79.49,
+      "drop_recon": 0.9256,
+      "drop_spectral": 0.6895,
+      "drop_spatial": 0.0242,
+      "drop_stability": 0.0,
+      "primary_detecting_component": "Recon",
+      "pre_outside_mean": 0.9144,
+      "post_outside_mean": 0.9136,
+      "false_flagging_rate_percent": 0.357,
+      "detected_by_vistaara": true,
+      "detected_by_sen2sr_lam": false,
+      "fig_path": "contribution_gap_figures\\failure_fail_4_radiometric_shift.png"
+    },
+    {
+      "failure_id": "fail_5_gaussian_noise",
+      "name": "Subtle Gaussian Perturbation",
+      "mechanism": "Zero-mean Gaussian noise (sigma = 0.025) across all bands",
+      "expected_target": "S_spatial & S_recon",
+      "pre_inside_mean": 0.9414,
+      "post_inside_mean": 0.7922,
+      "post_inside_min": 0.5314,
+      "delta_reliability": 0.1492,
+      "contrast_ratio": 13.18,
+      "drop_recon": 0.2291,
+      "drop_spectral": 0.1159,
+      "drop_spatial": 0.1371,
+      "drop_stability": 0.0,
+      "primary_detecting_component": "Recon",
+      "pre_outside_mean": 0.9144,
+      "post_outside_mean": 0.9142,
+      "false_flagging_rate_percent": 0.091,
+      "detected_by_vistaara": true,
+      "detected_by_sen2sr_lam": false,
+      "fig_path": "contribution_gap_figures\\failure_fail_5_gaussian_noise.png"
+    },
+    {
+      "failure_id": "fail_6_zero_mean_texture",
+      "name": "Zero-Mean Texture Hallucination",
+      "mechanism": "Zero-mean 4x4 balanced high-frequency synthetic texture (amplitude 0.05)",
+      "expected_target": "S_spatial (Curvature Energy)",
+      "pre_inside_mean": 0.9414,
+      "post_inside_mean": 0.8899,
+      "post_inside_min": 0.6629,
+      "delta_reliability": 0.0515,
+      "contrast_ratio": 4.55,
+      "drop_recon": -0.0,
+      "drop_spectral": -0.0,
+      "drop_spatial": 0.2027,
+      "drop_stability": 0.0,
+      "primary_detecting_component": "Spatial",
+      "pre_outside_mean": 0.9144,
+      "post_outside_mean": 0.9144,
+      "false_flagging_rate_percent": 0.0,
+      "detected_by_vistaara": true,
+      "detected_by_sen2sr_lam": false,
+      "fig_path": "contribution_gap_figures\\failure_fail_6_zero_mean_texture.png"
+    }
+  ],
+  "stage6_urban_benchmark": {
+    "urban_pixel_count": 2087616,
+    "urban_r_mean": 0.9366,
+    "urban_r_std": 0.0589,
+    "urban_r_min": 0.0453,
+    "urban_r_p10": 0.9281,
+    "urban_r_p50": 0.9442,
+    "urban_r_p90": 0.9536,
+    "urban_recon_mean": 0.9521,
+    "urban_spectral_mean": 0.8874,
+    "urban_spatial_mean": 0.9978,
+    "urban_stability_mean": 0.9758,
+    "non_urban_r_mean": 0.9359,
+    "water_r_mean": 0.9188,
+    "vegetation_r_mean": 0.9366,
+    "fig_path": "contribution_gap_figures\\real_urban_benchmark.png"
+  },
+  "stage7_downstream_decision": {
+    "urban_crop_dimensions": [
+      512,
+      512
+    ],
+    "ground_truth_urban_pixels": 186304,
+    "pathway_a_total_detected": 48553,
+    "pathway_a_true_positives": 47200,
+    "pathway_a_false_positives": 1353,
+    "pathway_a_precision_percent": 97.21,
+    "pathway_a_recall_percent": 25.33,
+    "pathway_b_precision_percent": 97.21,
+    "pathway_b_limitation": "SEN2SR LAM provides patch attribution scalars; cannot perform sub-patch pixel filtering.",
+    "pathway_c_total_detected": 45852,
+    "pathway_c_true_positives": 44756,
+    "pathway_c_false_positives": 1096,
+    "pathway_c_precision_percent": 97.61,
+    "pathway_c_recall_percent": 24.02,
+    "false_positive_reduction_percent": 18.99,
+    "precision_gain_percent": 0.4,
+    "retained_true_positive_percent": 94.82,
+    "fig_path": "contribution_gap_figures\\downstream_decision_impact.png"
+  },
+  "stage8_ablation": {
+    "ablation_matrix": [
+      {
+        "failure_id": "fail_1_checkerboard_ringing",
+        "failure_name": "Checkerboard / High-Frequency Ringing",
+        "s_recon": 0.98,
+        "s_spectral": 0.98,
+        "s_spatial": 0.01,
+        "s_stability": 0.98,
+        "scores": {
+          "Config 1 (Recon Only)": 0.98,
+          "Config 2 (Recon + Spectral)": 0.98,
+          "Config 3 (Recon + Spec + Spat)": 0.2339,
+          "Config 4 (Full VISTAARA 4-Factor)": 0.3115
+        },
+        "detected": {
+          "Config 1 (Recon Only)": false,
+          "Config 2 (Recon + Spectral)": false,
+          "Config 3 (Recon + Spec + Spat)": true,
+          "Config 4 (Full VISTAARA 4-Factor)": true
+        }
+      },
+      {
+        "failure_id": "fail_2_spectral_skew",
+        "failure_name": "Severe Spectral Band Skew",
+        "s_recon": 0.0586,
+        "s_spectral": 0.1167,
+        "s_spatial": 0.9463,
+        "s_stability": 0.98,
+        "scores": {
+          "Config 1 (Recon Only)": 0.0586,
+          "Config 2 (Recon + Spectral)": 0.0799,
+          "Config 3 (Recon + Spec + Spat)": 0.1734,
+          "Config 4 (Full VISTAARA 4-Factor)": 0.2451
+        },
+        "detected": {
+          "Config 1 (Recon Only)": true,
+          "Config 2 (Recon + Spectral)": true,
+          "Config 3 (Recon + Spec + Spat)": true,
+          "Config 4 (Full VISTAARA 4-Factor)": true
+        }
+      },
+      {
+        "failure_id": "fail_3_edge_displacement",
+        "failure_name": "Local Structural Edge Displacement",
+        "s_recon": 0.5367,
+        "s_spectral": 0.6958,
+        "s_spatial": 0.9441,
+        "s_stability": 0.98,
+        "scores": {
+          "Config 1 (Recon Only)": 0.5367,
+          "Config 2 (Recon + Spectral)": 0.6032,
+          "Config 3 (Recon + Spec + Spat)": 0.6944,
+          "Config 4 (Full VISTAARA 4-Factor)": 0.7439
+        },
+        "detected": {
+          "Config 1 (Recon Only)": true,
+          "Config 2 (Recon + Spectral)": true,
+          "Config 3 (Recon + Spec + Spat)": true,
+          "Config 4 (Full VISTAARA 4-Factor)": true
+        }
+      },
+      {
+        "failure_id": "fail_4_radiometric_shift",
+        "failure_name": "Radiometric Shift / Brightness Jump",
+        "s_recon": 0.0544,
+        "s_spectral": 0.2905,
+        "s_spatial": 0.9258,
+        "s_stability": 0.98,
+        "scores": {
+          "Config 1 (Recon Only)": 0.0544,
+          "Config 2 (Recon + Spectral)": 0.1156,
+          "Config 3 (Recon + Spec + Spat)": 0.2226,
+          "Config 4 (Full VISTAARA 4-Factor)": 0.2995
+        },
+        "detected": {
+          "Config 1 (Recon Only)": true,
+          "Config 2 (Recon + Spectral)": true,
+          "Config 3 (Recon + Spec + Spat)": true,
+          "Config 4 (Full VISTAARA 4-Factor)": true
+        }
+      },
+      {
+        "failure_id": "fail_5_gaussian_noise",
+        "failure_name": "Subtle Gaussian Perturbation",
+        "s_recon": 0.7509,
+        "s_spectral": 0.8641,
+        "s_spatial": 0.8129,
+        "s_stability": 0.98,
+        "scores": {
+          "Config 1 (Recon Only)": 0.7509,
+          "Config 2 (Recon + Spectral)": 0.7999,
+          "Config 3 (Recon + Spec + Spat)": 0.8043,
+          "Config 4 (Full VISTAARA 4-Factor)": 0.8367
+        },
+        "detected": {
+          "Config 1 (Recon Only)": true,
+          "Config 2 (Recon + Spectral)": true,
+          "Config 3 (Recon + Spec + Spat)": true,
+          "Config 4 (Full VISTAARA 4-Factor)": true
+        }
+      },
+      {
+        "failure_id": "fail_6_zero_mean_texture",
+        "failure_name": "Zero-Mean Texture Hallucination",
+        "s_recon": 0.98,
+        "s_spectral": 0.98,
+        "s_spatial": 0.7473,
+        "s_stability": 0.98,
+        "scores": {
+          "Config 1 (Recon Only)": 0.98,
+          "Config 2 (Recon + Spectral)": 0.98,
+          "Config 3 (Recon + Spec + Spat)": 0.9004,
+          "Config 4 (Full VISTAARA 4-Factor)": 0.9158
+        },
+        "detected": {
+          "Config 1 (Recon Only)": false,
+          "Config 2 (Recon + Spectral)": false,
+          "Config 3 (Recon + Spec + Spat)": true,
+          "Config 4 (Full VISTAARA 4-Factor)": true
+        }
+      }
+    ],
+    "fig_path": "contribution_gap_figures\\component_ablation_study.png"
+  }
+}

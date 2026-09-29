@@ -1,0 +1,1659 @@
+{
+  "dataset_name": "VISTAARA_OCRGSR_India_Benchmark_Dataset",
+  "last_updated_utc": "2026-09-17T11:05:21Z",
+  "scenes": [
+    {
+      "region_id": "URB_01_DELHI",
+      "region_name": "Delhi NCR",
+      "category": "Urban",
+      "split": "Train",
+      "description": "Dense high-rise, mixed residential, industrial, transport networks.",
+      "stac_item_id": "S2B_43RFN_20250324_0_L2A",
+      "mgrs_tile": "MGRS-43RFN",
+      "acquisition_datetime": "2025-03-24T05:40:55.105000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.03501651049163,
+              29.826403661902923
+            ],
+            [
+              76.02505755898267,
+              28.835580215062794
+            ],
+            [
+              77.15005665388128,
+              28.822340288958415
+            ],
+            [
+              77.17093016766626,
+              29.812619352753874
+            ],
+            [
+              76.03501651049163,
+              29.826403661902923
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          76.025058,
+          28.82234,
+          77.17093,
+          29.826404
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 0
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "URB_02_BLR",
+      "region_name": "Bengaluru",
+      "category": "Urban",
+      "split": "Train",
+      "description": "Sprawling tech corridor, urban lakes, mixed tree canopy and dense built-up.",
+      "stac_item_id": "S2B_43PGQ_20250206_0_L2A",
+      "mgrs_tile": "MGRS-43PGQ",
+      "acquisition_datetime": "2025-02-06T05:25:21.203000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.92792915828085,
+              13.560998223324514
+            ],
+            [
+              76.84507119378965,
+              13.188653383042697
+            ],
+            [
+              76.84054354907092,
+              12.569253669512213
+            ],
+            [
+              77.85045784138613,
+              12.560413606130458
+            ],
+            [
+              77.86185827663547,
+              13.552040522490456
+            ],
+            [
+              76.92792915828085,
+              13.560998223324514
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          76.84054354907092,
+          12.560413606130458,
+          77.86185827663547,
+          13.560998223324514
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 9.8e-05,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 1e-05,
+        "s2_medium_proba_clouds_pct": 2e-05,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 1.451717
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/GQ/2025/2/S2B_43PGQ_20250206_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/GQ/2025/2/S2B_43PGQ_20250206_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/GQ/2025/2/S2B_43PGQ_20250206_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/GQ/2025/2/S2B_43PGQ_20250206_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/GQ/2025/2/S2B_43PGQ_20250206_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "URB_03_MUM",
+      "region_name": "Mumbai MMR",
+      "category": "Urban",
+      "split": "Validation",
+      "description": "Coastal megacity, linear high-density infrastructure, creek interface.",
+      "stac_item_id": "S2B_43QCB_20250205_0_L2A",
+      "mgrs_tile": "MGRS-43QCB",
+      "acquisition_datetime": "2025-02-05T05:53:42.615000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              73.10123069168914,
+              18.895343694175157
+            ],
+            [
+              73.42669396401834,
+              18.898564226875166
+            ],
+            [
+              73.55677666901256,
+              19.42591558426401
+            ],
+            [
+              73.32030511907624,
+              19.488788566768726
+            ],
+            [
+              73.3172974610405,
+              19.48804724419178
+            ],
+            [
+              73.09794227845985,
+              19.54357757877435
+            ],
+            [
+              73.09789773791829,
+              19.547378034064856
+            ],
+            [
+              73.09371286008928,
+              19.548341025988137
+            ],
+            [
+              73.10123069168914,
+              18.895343694175157
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          73.09371286008928,
+          18.895343694175157,
+          73.55677666901256,
+          19.548341025988137
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 77.054411
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/CB/2025/2/S2B_43QCB_20250205_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/CB/2025/2/S2B_43QCB_20250205_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/CB/2025/2/S2B_43QCB_20250205_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/CB/2025/2/S2B_43QCB_20250205_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/CB/2025/2/S2B_43QCB_20250205_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "URB_04_HYD",
+      "region_name": "Hyderabad",
+      "category": "Urban",
+      "split": "Test",
+      "description": "Granitic plateau topography, planned urban zones, rocky outcrops.",
+      "stac_item_id": "S2B_43QHV_20250328_0_L2A",
+      "mgrs_tile": "MGRS-43QHV",
+      "acquisition_datetime": "2025-03-28T05:24:05.807000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.9359685853479,
+              18.066726246396165
+            ],
+            [
+              77.82617731058065,
+              17.583598645389035
+            ],
+            [
+              77.81843153067621,
+              17.0769991526807
+            ],
+            [
+              78.84855675363389,
+              17.060059200071183
+            ],
+            [
+              78.86956016256403,
+              18.050265871344198
+            ],
+            [
+              77.9359685853479,
+              18.066726246396165
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          77.818432,
+          17.060059,
+          78.86956,
+          18.066726
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0.000894,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0.000894,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 2.367909
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/HV/2025/3/S2B_43QHV_20250328_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/HV/2025/3/S2B_43QHV_20250328_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/HV/2025/3/S2B_43QHV_20250328_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/HV/2025/3/S2B_43QHV_20250328_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/HV/2025/3/S2B_43QHV_20250328_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "AGR_01_PUNJAB",
+      "region_name": "Punjab Ludhiana Plains",
+      "category": "Agricultural",
+      "split": "Train",
+      "description": "Intensive irrigated cereal parcels, regular rectilinear farm borders, canals.",
+      "stac_item_id": "S2B_43RFP_20241207_0_L2A",
+      "mgrs_tile": "MGRS-43RFP",
+      "acquisition_datetime": "2024-12-07T05:50:33.298000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.0445314762068,
+              30.728857773305315
+            ],
+            [
+              76.03411852411334,
+              29.739074946496665
+            ],
+            [
+              76.28873412785765,
+              29.737919050206294
+            ],
+            [
+              76.57286682926289,
+              30.723530117256075
+            ],
+            [
+              76.0445314762068,
+              30.728857773305315
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          76.03411852411334,
+          29.737919050206294,
+          76.57286682926289,
+          30.728857773305315
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0,
+        "s2_cloud_shadow_pct": 0.001537,
+        "s2_nodata_pixel_pct": 65.669018
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "AGR_02_MALWA",
+      "region_name": "Madhya Pradesh Malwa",
+      "category": "Agricultural",
+      "split": "Train",
+      "description": "Rainfed black soil agriculture, undulating terrain, seasonal crop patterns.",
+      "stac_item_id": "S2B_43QEF_20250202_0_L2A",
+      "mgrs_tile": "MGRS-43QEF",
+      "acquisition_datetime": "2025-02-02T05:42:39.646000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.9998138934438,
+              23.51054699653549
+            ],
+            [
+              74.99981524925691,
+              22.518694563834764
+            ],
+            [
+              76.06738951675017,
+              22.515156866422824
+            ],
+            [
+              76.0752208368034,
+              23.506835550698874
+            ],
+            [
+              74.9998138934438,
+              23.51054699653549
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          74.9998138934438,
+          22.515156866422824,
+          76.0752208368034,
+          23.51054699653549
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 0
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/EF/2025/2/S2B_43QEF_20250202_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/EF/2025/2/S2B_43QEF_20250202_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/EF/2025/2/S2B_43QEF_20250202_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/EF/2025/2/S2B_43QEF_20250202_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/Q/EF/2025/2/S2B_43QEF_20250202_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "AGR_03_GODAVARI",
+      "region_name": "Andhra Godavari Delta",
+      "category": "Agricultural",
+      "split": "Validation",
+      "description": "Alluvial deltaic paddy agro-ecosystem, high soil moisture, irrigation networks.",
+      "stac_item_id": "S2B_44QNE_20250213_0_L2A",
+      "mgrs_tile": "MGRS-44QNE",
+      "acquisition_datetime": "2025-02-13T05:14:01.038000Z",
+      "crs_epsg": "EPSG:32644",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.99982043174884,
+              18.089061446757505
+            ],
+            [
+              80.99982140936493,
+              17.09659583882822
+            ],
+            [
+              82.03180758238159,
+              17.09396920242395
+            ],
+            [
+              82.03745452938517,
+              18.0862723830153
+            ],
+            [
+              80.99982043174884,
+              18.089061446757505
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          80.99982,
+          17.093969,
+          82.037455,
+          18.089061
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0.000159,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 9.6e-05,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 0
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/NE/2025/2/S2B_44QNE_20250213_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/NE/2025/2/S2B_44QNE_20250213_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/NE/2025/2/S2B_44QNE_20250213_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/NE/2025/2/S2B_44QNE_20250213_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/NE/2025/2/S2B_44QNE_20250213_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "AGR_04_CAUVERY",
+      "region_name": "Tamil Nadu Cauvery Delta",
+      "category": "Agricultural",
+      "split": "Test",
+      "description": "Deep Southern deltaic rice cultivation, canal distribution, distinct agro-climate.",
+      "stac_item_id": "S2B_44PKT_20250504_0_L2A",
+      "mgrs_tile": "MGRS-44PKT",
+      "acquisition_datetime": "2025-05-04T05:15:50.278000Z",
+      "crs_epsg": "EPSG:32644",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.02814587167558,
+              11.75322131001259
+            ],
+            [
+              78.80848643939635,
+              10.759297545811469
+            ],
+            [
+              79.26037882374214,
+              10.762160735555229
+            ],
+            [
+              79.25440628028593,
+              11.75469518530969
+            ],
+            [
+              79.02814587167558,
+              11.75322131001259
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          78.808486,
+          10.759298,
+          79.260379,
+          11.754695
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0.000922,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 2e-05,
+        "s2_medium_proba_clouds_pct": 0.000902,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 66.16081
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "FOR_01_WGHATS",
+      "region_name": "Western Ghats Agumbe",
+      "category": "Forest",
+      "split": "Train",
+      "description": "Dense tropical wet evergreen rainforest, steep terrain, high canopy density.",
+      "stac_item_id": "S2C_43PER_20250224_0_L2A",
+      "mgrs_tile": "MGRS-43PER",
+      "acquisition_datetime": "2025-02-24T05:35:30.464000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              74.99982369261289,
+              14.472821087937575
+            ],
+            [
+              74.99982444657684,
+              13.48002617995303
+            ],
+            [
+              76.01426378489305,
+              13.477978213324247
+            ],
+            [
+              76.01861891245028,
+              14.470616149404691
+            ],
+            [
+              74.99982369261289,
+              14.472821087937575
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          74.999824,
+          13.477978,
+          76.018619,
+          14.472821
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 1e-05,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 1e-05,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 0
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/ER/2025/2/S2C_43PER_20250224_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/ER/2025/2/S2C_43PER_20250224_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/ER/2025/2/S2C_43PER_20250224_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/ER/2025/2/S2C_43PER_20250224_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/ER/2025/2/S2C_43PER_20250224_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "FOR_02_KANHA",
+      "region_name": "Central India Kanha",
+      "category": "Forest",
+      "split": "Validation",
+      "description": "Tropical moist deciduous Sal forest mixed with open grassland clearings.",
+      "stac_item_id": "S2B_44QMK_20250407_0_L2A",
+      "mgrs_tile": "MGRS-44QMK",
+      "acquisition_datetime": "2025-04-07T05:22:44.341000Z",
+      "crs_epsg": "EPSG:32644",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.02668264165925,
+              22.604077821744546
+            ],
+            [
+              80.03346472559144,
+              21.612256453448165
+            ],
+            [
+              81.09429245837714,
+              21.615037874665187
+            ],
+            [
+              81.09495422503124,
+              22.607000365009924
+            ],
+            [
+              80.02668264165925,
+              22.604077821744546
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          80.026683,
+          21.612256,
+          81.094954,
+          22.607
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 0
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/MK/2025/4/S2B_44QMK_20250407_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/MK/2025/4/S2B_44QMK_20250407_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/MK/2025/4/S2B_44QMK_20250407_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/MK/2025/4/S2B_44QMK_20250407_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/Q/MK/2025/4/S2B_44QMK_20250407_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "FOR_03_ASSAM",
+      "region_name": "Assam Kaziranga Buffer",
+      "category": "Forest",
+      "split": "Test",
+      "description": "Semi-evergreen riparian forest, tall alluvial grassland, river corridor.",
+      "stac_item_id": "S2A_46REQ_20241228_0_L2A",
+      "mgrs_tile": "MGRS-46REQ",
+      "acquisition_datetime": "2024-12-28T04:31:09.379000Z",
+      "crs_epsg": "EPSG:32646",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              92.9998082889574,
+              27.122460612981637
+            ],
+            [
+              92.9998099360171,
+              26.13108675659767
+            ],
+            [
+              94.09807912157615,
+              26.12690347266134
+            ],
+            [
+              94.10759251416471,
+              27.118093505675304
+            ],
+            [
+              92.9998082889574,
+              27.122460612981637
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          92.9998082889574,
+          26.12690347266134,
+          94.10759251416471,
+          27.122460612981637
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0.00495,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 5.3e-05,
+        "s2_medium_proba_clouds_pct": 0.004897,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 0
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/EQ/2024/12/S2A_46REQ_20241228_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/EQ/2024/12/S2A_46REQ_20241228_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/EQ/2024/12/S2A_46REQ_20241228_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/EQ/2024/12/S2A_46REQ_20241228_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/46/R/EQ/2024/12/S2A_46REQ_20241228_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "WAT_01_CHILIKA",
+      "region_name": "Chilika Lake Lagoon",
+      "category": "Water & Mixed",
+      "split": "Train",
+      "description": "Brackish coastal lagoon, barrier sand spit, wetland vegetation and mudflats.",
+      "stac_item_id": "S2B_45QTB_20250121_0_L2A",
+      "mgrs_tile": "MGRS-45QTB",
+      "acquisition_datetime": "2025-01-21T05:03:15.378000Z",
+      "crs_epsg": "EPSG:32645",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              84.1351021856522,
+              19.873362330133464
+            ],
+            [
+              84.13532865599163,
+              19.860763407645106
+            ],
+            [
+              84.33425683948454,
+              19.823721251179304
+            ],
+            [
+              84.33823502739628,
+              19.8228978782744
+            ],
+            [
+              84.33831206298431,
+              19.82165175535928
+            ],
+            [
+              84.51950308790211,
+              19.784680562251484
+            ],
+            [
+              84.62310890921344,
+              19.7649484851424
+            ],
+            [
+              84.77812968491111,
+              19.7322541222214
+            ],
+            [
+              84.84651169527874,
+              19.71548621089868
+            ],
+            [
+              85.00736130299634,
+              19.680115664632893
+            ],
+            [
+              85.00958991851115,
+              19.68141610294851
+            ],
+            [
+              85.18585899457699,
+              19.64006935956187
+            ],
+            [
+              85.18306169690975,
+              19.887144310206924
+            ],
+            [
+              84.1351021856522,
+              19.873362330133464
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          84.1351021856522,
+          19.64006935956187,
+          85.18585899457699,
+          19.887144310206924
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 87.0103
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/TB/2025/1/S2B_45QTB_20250121_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/TB/2025/1/S2B_45QTB_20250121_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/TB/2025/1/S2B_45QTB_20250121_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/TB/2025/1/S2B_45QTB_20250121_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/TB/2025/1/S2B_45QTB_20250121_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "WAT_02_SUNDAR",
+      "region_name": "Sundarbans Estuary",
+      "category": "Water & Mixed",
+      "split": "Validation",
+      "description": "Dense tidal mangrove swamp, dynamic intertidal channels, saline mudflats.",
+      "stac_item_id": "S2B_45QXD_20250204_0_L2A",
+      "mgrs_tile": "MGRS-45QXD",
+      "acquisition_datetime": "2025-02-04T04:42:48.147000Z",
+      "crs_epsg": "EPSG:32645",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              88.8455733555528,
+              21.693136129886124
+            ],
+            [
+              88.67809197345018,
+              20.97372937464936
+            ],
+            [
+              88.92007763640886,
+              20.934628336302396
+            ],
+            [
+              88.92631210998786,
+              20.93650313772561
+            ],
+            [
+              89.01730245823595,
+              20.92062914898056
+            ],
+            [
+              89.02785138563014,
+              21.691006913495713
+            ],
+            [
+              88.8455733555528,
+              21.693136129886124
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          88.67809197345018,
+          20.92062914898056,
+          89.02785138563014,
+          21.693136129886124
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 81.135923
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/XD/2025/2/S2B_45QXD_20250204_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/XD/2025/2/S2B_45QXD_20250204_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/XD/2025/2/S2B_45QXD_20250204_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/XD/2025/2/S2B_45QXD_20250204_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/45/Q/XD/2025/2/S2B_45QXD_20250204_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    },
+    {
+      "region_id": "WAT_03_VEMBANAD",
+      "region_name": "Vembanad Backwaters",
+      "category": "Water & Mixed",
+      "split": "Test",
+      "description": "Tropical estuarine backwaters, reclaimed polders, narrow canals and barriers.",
+      "stac_item_id": "S2A_43PFL_20250105_0_L2A",
+      "mgrs_tile": "MGRS-43PFL",
+      "acquisition_datetime": "2025-01-05T05:36:13.968000Z",
+      "crs_epsg": "EPSG:32643",
+      "native_shape_10m": [
+        10980,
+        10980
+      ],
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              75.91228009056225,
+              9.950154705674878
+            ],
+            [
+              75.90967031013277,
+              8.958077861126245
+            ],
+            [
+              76.12059994898253,
+              8.958580242958401
+            ],
+            [
+              76.34586163718903,
+              9.948690950759765
+            ],
+            [
+              75.91228009056225,
+              9.950154705674878
+            ]
+          ]
+        ],
+        "bbox_wgs84": [
+          75.90967031013277,
+          8.958077861126245,
+          76.34586163718903,
+          9.950154705674878
+        ]
+      },
+      "cloud_cover_audit": {
+        "eo_cloud_cover_pct": 0.00073,
+        "source_field": "properties.eo:cloud_cover",
+        "s2_high_proba_clouds_pct": 0,
+        "s2_medium_proba_clouds_pct": 0.00073,
+        "s2_cloud_shadow_pct": 0,
+        "s2_nodata_pixel_pct": 67.736995
+      },
+      "required_assets_verified": true,
+      "asset_urls": {
+        "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/FL/2025/1/S2A_43PFL_20250105_0_L2A/B02.tif",
+        "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/FL/2025/1/S2A_43PFL_20250105_0_L2A/B03.tif",
+        "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/FL/2025/1/S2A_43PFL_20250105_0_L2A/B04.tif",
+        "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/FL/2025/1/S2A_43PFL_20250105_0_L2A/B08.tif",
+        "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/P/FL/2025/1/S2A_43PFL_20250105_0_L2A/SCL.tif"
+      },
+      "planned_1024_rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_bounds": {
+            "y_min": 1800,
+            "y_max": 2824,
+            "x_min": 1800,
+            "x_max": 2824
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_bounds": {
+            "y_min": 4978,
+            "y_max": 6002,
+            "x_min": 4978,
+            "x_max": 6002
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_bounds": {
+            "y_min": 8156,
+            "y_max": 9180,
+            "x_min": 8156,
+            "x_max": 9180
+          },
+          "window_size_pixels": [
+            1024,
+            1024
+          ],
+          "fits_granule": true
+        }
+      ]
+    }
+  ],
+  "storage_budget": {
+    "budget_cap_mb": 250.0,
+    "total_planned_rois": 42,
+    "roi_pixel_size": "1024 x 1024 (10.24 km x 10.24 km)",
+    "roi_storage_formats": {
+      "uncompressed_float32": {
+        "bytes_per_roi": 16777216,
+        "mb_per_roi": 16.0,
+        "total_dataset_mb": 672.0,
+        "fits_in_250mb_cap": false,
+        "status": "In-memory tensor format during training execution"
+      },
+      "uncompressed_uint16_native_dn": {
+        "bytes_per_roi": 8650752,
+        "mb_per_roi": 8.25,
+        "total_dataset_mb": 346.5,
+        "fits_in_250mb_cap": false,
+        "status": "Raw uncompressed 16-bit surface reflectance"
+      },
+      "compressed_deflate_geotiff_or_npz": {
+        "estimated_compression_ratio": "1.75x - 2.10x (mean 1.95x)",
+        "bytes_per_roi_estimated": 4436283,
+        "mb_per_roi": 4.8,
+        "total_dataset_mb": 201.6,
+        "fits_in_250mb_cap": true,
+        "status": "Analytical estimate based on empirical DEFLATE compression"
+      }
+    },
+    "critical_distinction_statement": "The 201.6 MB figure is an ANALYTICAL ESTIMATE based on lossless DEFLATE compression applied to 16-bit surface reflectance. If stored uncompressed, the 42 ROIs would require 346.5 MB (UInt16) or 672.0 MB (Float32). To strictly respect the 250 MB ceiling, all downloaded ROI files must be saved with DEFLATE/LZW compression (GeoTIFF) or compressed NPZ.",
+    "verdict": "FEASIBLE_WITH_COMPRESSION"
+  }
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "case": "Clean SR",
+    "mean_score": 0.9978585243225098,
+    "median_score": 1.0,
+    "min_score": 0.008247345685958862,
+    "edge_coherence": 0.9793725609779358,
+    "pct_score_lt_95": 0.29587745666503906,
+    "pct_score_lt_80": 0.20508766174316406
+  },
+  {
+    "case": "Noise (sigma=0.015)",
+    "mean_score": 0.9884957075119019,
+    "median_score": 1.0,
+    "min_score": 0.01253819465637207,
+    "edge_coherence": 0.9733219742774963,
+    "pct_score_lt_95": 6.333589553833008,
+    "pct_score_lt_80": 0.21092891693115234
+  },
+  {
+    "case": "Noise (sigma=0.050)",
+    "mean_score": 0.9187623858451843,
+    "median_score": 0.9365410804748535,
+    "min_score": 0.004677325487136841,
+    "edge_coherence": 0.913063645362854,
+    "pct_score_lt_95": 55.095791816711426,
+    "pct_score_lt_80": 9.167742729187012
+  },
+  {
+    "case": "Mild Ringing (A=0.03)",
+    "mean_score": 0.9979003667831421,
+    "median_score": 1.0,
+    "min_score": 0.008247345685958862,
+    "edge_coherence": 0.9793762564659119,
+    "pct_score_lt_95": 0.29587745666503906,
+    "pct_score_lt_80": 0.20508766174316406
+  },
+  {
+    "case": "Severe Ringing (A=0.08)",
+    "mean_score": 0.9979795217514038,
+    "median_score": 1.0,
+    "min_score": 0.008247345685958862,
+    "edge_coherence": 0.9793832302093506,
+    "pct_score_lt_95": 0.29587745666503906,
+    "pct_score_lt_80": 0.20508766174316406
+  },
+  {
+    "case": "Local Artifact",
+    "mean_score": 0.9940154552459717,
+    "median_score": 1.0,
+    "min_score": 0.007478266954421997,
+    "edge_coherence": 0.9764700531959534,
+    "pct_score_lt_95": 2.66571044921875,
+    "pct_score_lt_80": 0.8281707763671875
+  },
+  {
+    "case": "Edge Distortion",
+    "mean_score": 0.992599368095398,
+    "median_score": 1.0,
+    "min_score": 0.004847079515457153,
+    "edge_coherence": 0.8549619913101196,
+    "pct_score_lt_95": 3.441739082336426,
+    "pct_score_lt_80": 0.8859872817993164
+  }
+]

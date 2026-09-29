@@ -1,0 +1,62 @@
+[
+  {
+    "case": "Clean SR",
+    "mean_relative_error_pct": 0.6095144897699356,
+    "median_relative_error_pct": 0.347179651260376,
+    "p95_relative_error_pct": 1.121347427368164,
+    "mean_score": 0.9242540001869202,
+    "median_score": 0.9405947923660278,
+    "min_score": 0.0014599129790440202,
+    "pct_score_lt_80": 2.334928512573242
+  },
+  {
+    "case": "Noise (sigma=0.015)",
+    "mean_relative_error_pct": 1.488228514790535,
+    "median_relative_error_pct": 1.2552603483200073,
+    "p95_relative_error_pct": 2.4424355030059814,
+    "mean_score": 0.7992203235626221,
+    "median_score": 0.8088119029998779,
+    "min_score": 0.0017242111498489976,
+    "pct_score_lt_80": 43.363308906555176
+  },
+  {
+    "case": "Noise (sigma=0.050)",
+    "mean_relative_error_pct": 4.2582981288433075,
+    "median_relative_error_pct": 3.9161834716796875,
+    "p95_relative_error_pct": 7.571333408355713,
+    "mean_score": 0.5193643569946289,
+    "median_score": 0.5229474306106567,
+    "min_score": 0.0022395080886781216,
+    "pct_score_lt_80": 99.85835552215576
+  },
+  {
+    "case": "Spectral Shift",
+    "mean_relative_error_pct": 21.77358567714691,
+    "median_relative_error_pct": 21.36566162109375,
+    "p95_relative_error_pct": 27.929729461669922,
+    "mean_score": 0.0320483073592186,
+    "median_score": 0.02865726687014103,
+    "min_score": 0.0001996225764742121,
+    "pct_score_lt_80": 100.0
+  },
+  {
+    "case": "Spatial Ringing (A=0.08)",
+    "mean_relative_error_pct": 0.5779783241450787,
+    "median_relative_error_pct": 0.34726792573928833,
+    "p95_relative_error_pct": 1.1213544607162476,
+    "mean_score": 0.9244194030761719,
+    "median_score": 0.9405854940414429,
+    "min_score": 0.0032783308997750282,
+    "pct_score_lt_80": 2.331995964050293
+  },
+  {
+    "case": "Local Artifact",
+    "mean_relative_error_pct": 1.004398986697197,
+    "median_relative_error_pct": 0.3598387837409973,
+    "p95_relative_error_pct": 2.1598987579345703,
+    "mean_score": 0.8957387208938599,
+    "median_score": 0.9388286471366882,
+    "min_score": 0.0014599129790440202,
+    "pct_score_lt_80": 6.16457462310791
+  }
+]

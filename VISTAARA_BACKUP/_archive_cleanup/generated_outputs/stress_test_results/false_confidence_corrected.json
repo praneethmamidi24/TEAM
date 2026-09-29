@@ -1,0 +1,11 @@
+{
+  "total_pixels": 4194304,
+  "high_rel_threshold": 0.85,
+  "high_recon_error_px": 124,
+  "high_recon_error_pct": 0.002956390380859375,
+  "high_sam_error_px": 0,
+  "high_sam_error_pct": 0.0,
+  "low_rel_threshold": 0.6,
+  "false_alarm_px": 0,
+  "false_alarm_pct": 0.0
+}

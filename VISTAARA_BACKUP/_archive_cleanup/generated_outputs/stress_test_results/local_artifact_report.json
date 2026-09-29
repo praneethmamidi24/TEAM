@@ -1,0 +1,27 @@
+{
+  "artifact_bbox": [
+    600,
+    1000,
+    800,
+    1200
+  ],
+  "artifact_area_pct": 3.814697265625,
+  "clean_inside_rel": 0.9575958251953125,
+  "clean_outside_rel": 0.9504525661468506,
+  "artifact_inside_rel": 0.44431620836257935,
+  "artifact_outside_rel": 0.9503663182258606,
+  "delta_inside": -0.5132796168327332,
+  "delta_outside": -8.624792098999023e-05,
+  "contrast_inside_vs_outside": -0.5060501098632812,
+  "component_inside": {
+    "recon": 0.19249585270881653,
+    "spectral": 0.24224896728992462,
+    "spatial": 0.8995708227157593
+  },
+  "component_outside": {
+    "recon": 0.9236292839050293,
+    "spectral": 0.8922731876373291,
+    "spatial": 0.997761070728302
+  },
+  "localized_drop_detected": true
+}

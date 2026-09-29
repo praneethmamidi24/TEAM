@@ -1,0 +1,144 @@
+{
+  "138.tif": {
+    "tag": "138.tif",
+    "input_shape": [
+      4,
+      512,
+      512
+    ],
+    "sr_shape": [
+      4,
+      2048,
+      2048
+    ],
+    "t_sr": 6.228863716125488,
+    "t_rel": 9.923088550567627,
+    "recon_mean_rel_err_pct": 0.6095144897699356,
+    "recon_score_mean": 0.9242540001869202,
+    "recon_score_median": 0.9405947923660278,
+    "recon_score_min": 0.0014599129790440202,
+    "recon_score_max": 0.9955185651779175,
+    "sam_mean_deg": 0.5216360688209534,
+    "sam_median_deg": 0.5051296949386597,
+    "sam_p95_deg": 0.6821363568305969,
+    "sam_gt_2_pct": 0.0026702880859375,
+    "sam_gt_5_pct": 0.0,
+    "spectral_score_mean": 0.8926609754562378,
+    "spatial_score_mean": 0.9978585243225098,
+    "spatial_coherence_mean": 0.9793725609779358,
+    "stability_score_mean": 1.0,
+    "stability_sensitivity": 0.9681783318519592,
+    "rel_mean": 0.9507250785827637,
+    "rel_median": 0.9577487111091614,
+    "rel_min": 0.10885912925004959,
+    "rel_max": 0.9796573519706726,
+    "rel_std": 0.046605903655290604,
+    "pct_lt_90": 1.8544197082519531,
+    "pct_lt_75": 0.6616353988647461,
+    "pct_lt_50": 0.3918886184692383,
+    "difficult_diagnostics": {
+      "Cloud / Shadow": {
+        "detected": false,
+        "pixels": 0,
+        "pct_area": 0.0,
+        "mean_reliability": null,
+        "notes": "No cloud or shadow pixels identified in SCL."
+      },
+      "Water-Land Boundary": {
+        "detected": true,
+        "pixels": 9472,
+        "pct_area": 0.225830078125,
+        "mean_reliability": 0.8804075121879578,
+        "delta_vs_scene": -0.07031756639480591,
+        "mean_spectral": 0.8448941111564636,
+        "mean_recon": 0.799971342086792,
+        "mean_spatial": 0.9806124567985535,
+        "flagged_lower": true,
+        "notes": "Identified via morphological gradient of SCL Water Class 6 (mixed-pixel transition zone)."
+      },
+      "Urban / Bare Surface": {
+        "detected": true,
+        "pixels": 2722624,
+        "pct_area": 64.91241455078125,
+        "mean_reliability": 0.9512813687324524,
+        "delta_vs_scene": 0.0005562901496887207,
+        "mean_spectral": 0.8955630660057068,
+        "mean_recon": 0.9241968393325806,
+        "mean_spatial": 0.9975879788398743,
+        "flagged_lower": false,
+        "notes": "Identified via SCL Class 5 (Non-Vegetation / Urban / Soil). Does not constitute full semantic segmentation."
+      }
+    }
+  },
+  "75.tif": {
+    "tag": "75.tif",
+    "input_shape": [
+      4,
+      512,
+      512
+    ],
+    "sr_shape": [
+      4,
+      2048,
+      2048
+    ],
+    "t_sr": 6.105994939804077,
+    "t_rel": 9.072396993637085,
+    "recon_mean_rel_err_pct": 0.4251273348927498,
+    "recon_score_mean": 0.9521369338035583,
+    "recon_score_median": 0.9642180800437927,
+    "recon_score_min": 0.0016182920662686229,
+    "recon_score_max": 0.9969410300254822,
+    "sam_mean_deg": 0.5571518540382385,
+    "sam_median_deg": 0.545722246170044,
+    "sam_p95_deg": 0.6673462986946106,
+    "sam_gt_2_pct": 0.0003814697265625,
+    "sam_gt_5_pct": 0.0,
+    "spectral_score_mean": 0.8856392502784729,
+    "spatial_score_mean": 0.9983261823654175,
+    "spatial_coherence_mean": 0.995650589466095,
+    "stability_score_mean": 1.0,
+    "stability_sensitivity": 0.9631252288818359,
+    "rel_mean": 0.9561631679534912,
+    "rel_median": 0.9615976214408875,
+    "rel_min": 0.12215888500213623,
+    "rel_max": 0.9750789999961853,
+    "rel_std": 0.045050665736198425,
+    "pct_lt_90": 0.9983539581298828,
+    "pct_lt_75": 0.6380558013916016,
+    "pct_lt_50": 0.3905296325683594,
+    "difficult_diagnostics": {
+      "Cloud / Shadow": {
+        "detected": false,
+        "pixels": 0,
+        "pct_area": 0.0,
+        "mean_reliability": null,
+        "notes": "No cloud or shadow pixels identified in SCL."
+      },
+      "Water-Land Boundary": {
+        "detected": true,
+        "pixels": 36544,
+        "pct_area": 0.87127685546875,
+        "mean_reliability": 0.9465755224227905,
+        "delta_vs_scene": -0.009587645530700684,
+        "mean_spectral": 0.8554111123085022,
+        "mean_recon": 0.9390990734100342,
+        "mean_spatial": 0.9998563528060913,
+        "flagged_lower": true,
+        "notes": "Identified via morphological gradient of SCL Water Class 6 (mixed-pixel transition zone)."
+      },
+      "Urban / Bare Surface": {
+        "detected": true,
+        "pixels": 2087616,
+        "pct_area": 49.77264404296875,
+        "mean_reliability": 0.9560669660568237,
+        "delta_vs_scene": -9.620189666748047e-05,
+        "mean_spectral": 0.8873602747917175,
+        "mean_recon": 0.9520687460899353,
+        "mean_spatial": 0.9979404211044312,
+        "flagged_lower": true,
+        "notes": "Identified via SCL Class 5 (Non-Vegetation / Urban / Soil). Does not constitute full semantic segmentation."
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+[
+  {
+    "sigma": 0.002,
+    "mean_sensitivity": 0.9604141712188721,
+    "mean_score": 1.0,
+    "median_score": 1.0,
+    "min_score": 1.0,
+    "max_score": 1.0,
+    "runtime_s": 7.683992862701416
+  },
+  {
+    "sigma": 0.005,
+    "mean_sensitivity": 0.9625735282897949,
+    "mean_score": 1.0,
+    "median_score": 1.0,
+    "min_score": 1.0,
+    "max_score": 1.0,
+    "runtime_s": 7.189648628234863
+  },
+  {
+    "sigma": 0.01,
+    "mean_sensitivity": 0.9681783318519592,
+    "mean_score": 1.0,
+    "median_score": 1.0,
+    "min_score": 1.0,
+    "max_score": 1.0,
+    "runtime_s": 7.288274526596069
+  },
+  {
+    "sigma": 0.02,
+    "mean_sensitivity": 0.9818916320800781,
+    "mean_score": 1.0,
+    "median_score": 1.0,
+    "min_score": 1.0,
+    "max_score": 1.0,
+    "runtime_s": 7.591285228729248
+  },
+  {
+    "sigma": 0.05,
+    "mean_sensitivity": 1.0102062225341797,
+    "mean_score": 0.8807309865951538,
+    "median_score": 0.8810936808586121,
+    "min_score": 0.7952767610549927,
+    "max_score": 0.9545512199401855,
+    "runtime_s": 7.157671928405762
+  }
+]

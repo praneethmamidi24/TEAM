@@ -1,0 +1,943 @@
+{
+  "report_title": "Small Real ROI Extraction Validation Report",
+  "generated_at_utc": "2026-09-17T11:29:06Z",
+  "target_scenes_count": 3,
+  "results": [
+    {
+      "scene_info": {
+        "scene_key": "delhi_ncr",
+        "name": "Delhi NCR",
+        "split": "Train",
+        "category": "Urban",
+        "scene_id": "S2B_43RFN_20250324_0_L2A",
+        "mgrs_tile": "MGRS-43RFN",
+        "asset_urls": {
+          "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B02.tif",
+          "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B03.tif",
+          "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B04.tif",
+          "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B08.tif",
+          "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/SCL.tif"
+        }
+      },
+      "window_10m": {
+        "col_off": 1800,
+        "row_off": 1800,
+        "width": 1024,
+        "height": 1024
+      },
+      "window_20m": {
+        "col_off": 900,
+        "row_off": 900,
+        "width": 512,
+        "height": 512
+      },
+      "band_metadata": {
+        "B02": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B02.tif",
+          "http_status": 200,
+          "read_time_ms": 13369.4,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3282000.0
+          ],
+          "bounds": [
+            618000.0,
+            3271760.0,
+            628240.0,
+            3282000.0
+          ],
+          "min_val": 0,
+          "max_val": 6292,
+          "mean_val": 311.19,
+          "nodata_pixels": 25,
+          "nodata_pct": 0.0024,
+          "valid_pixels": 1048551,
+          "valid_pct": 99.9976
+        },
+        "B03": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B03.tif",
+          "http_status": 200,
+          "read_time_ms": 16564.6,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3282000.0
+          ],
+          "bounds": [
+            618000.0,
+            3271760.0,
+            628240.0,
+            3282000.0
+          ],
+          "min_val": 0,
+          "max_val": 5908,
+          "mean_val": 671.77,
+          "nodata_pixels": 1,
+          "nodata_pct": 0.0001,
+          "valid_pixels": 1048575,
+          "valid_pct": 99.9999
+        },
+        "B04": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B04.tif",
+          "http_status": 200,
+          "read_time_ms": 23576.0,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3282000.0
+          ],
+          "bounds": [
+            618000.0,
+            3271760.0,
+            628240.0,
+            3282000.0
+          ],
+          "min_val": 0,
+          "max_val": 5736,
+          "mean_val": 577.1,
+          "nodata_pixels": 1,
+          "nodata_pct": 0.0001,
+          "valid_pixels": 1048575,
+          "valid_pct": 99.9999
+        },
+        "B08": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/B08.tif",
+          "http_status": 200,
+          "read_time_ms": 12170.2,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3282000.0
+          ],
+          "bounds": [
+            618000.0,
+            3271760.0,
+            628240.0,
+            3282000.0
+          ],
+          "min_val": 0,
+          "max_val": 7076,
+          "mean_val": 3280.09,
+          "nodata_pixels": 2,
+          "nodata_pct": 0.0002,
+          "valid_pixels": 1048574,
+          "valid_pct": 99.9998
+        },
+        "SCL": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FN/2025/3/S2B_43RFN_20250324_0_L2A/SCL.tif",
+          "http_status": 200,
+          "read_time_ms": 4260.3,
+          "shape": [
+            512,
+            512
+          ],
+          "dtype": "uint8",
+          "crs": "EPSG:32643",
+          "resolution": [
+            20.0,
+            20.0
+          ],
+          "transform": [
+            20.0,
+            0.0,
+            618000.0,
+            0.0,
+            -20.0,
+            3282000.0
+          ],
+          "bounds": [
+            618000.0,
+            3271760.0,
+            628240.0,
+            3282000.0
+          ]
+        }
+      },
+      "spatial_alignment": {
+        "all_10m_bands_aligned": true,
+        "crs_consistent": true,
+        "geographic_bounds_match": true,
+        "bounds_10m": [
+          618000.0,
+          3271760.0,
+          628240.0,
+          3282000.0
+        ],
+        "bounds_20m": [
+          618000.0,
+          3271760.0,
+          628240.0,
+          3282000.0
+        ]
+      },
+      "scl_quality_audit": {
+        "valid_surface_pixels": 262144,
+        "valid_surface_percentage": 100.0,
+        "total_cloud_and_shadow_pixels": 0,
+        "total_cloud_and_shadow_percentage": 0.0,
+        "breakdown": {
+          "no_data_class_0_pct": 0.0,
+          "saturated_class_1_pct": 0.0,
+          "cloud_shadow_class_3_pct": 0.0,
+          "medium_cloud_class_8_pct": 0.0,
+          "high_cloud_class_9_pct": 0.0,
+          "thin_cirrus_class_10_pct": 0.0
+        },
+        "passes_quality_threshold": true
+      },
+      "scl_class_histogram": {
+        "class_0_NO_DATA": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_1_SATURATED_OR_DEFECTIVE": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_2_DARK_AREA_PIXELS": {
+          "count": 6,
+          "percentage": 0.0023,
+          "is_valid": true
+        },
+        "class_3_CLOUD_SHADOWS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_4_VEGETATION": {
+          "count": 238407,
+          "percentage": 90.9451,
+          "is_valid": true
+        },
+        "class_5_NOT_VEGETATED": {
+          "count": 23198,
+          "percentage": 8.8493,
+          "is_valid": true
+        },
+        "class_6_WATER": {
+          "count": 92,
+          "percentage": 0.0351,
+          "is_valid": true
+        },
+        "class_7_UNCLASSIFIED": {
+          "count": 441,
+          "percentage": 0.1682,
+          "is_valid": true
+        },
+        "class_8_CLOUD_MEDIUM_PROBABILITY": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_9_CLOUD_HIGH_PROBABILITY": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_10_THIN_CIRRUS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_11_SNOW_ICE": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        }
+      },
+      "measured_file_sizes_bytes": {
+        "geotiff_4band_10m": 6141269,
+        "geotiff_scl_20m": 11119,
+        "geotiff_total_pair": 6152388,
+        "compressed_npz_package": 6198584
+      },
+      "measured_file_sizes_mb": {
+        "geotiff_4band_10m_mb": 5.86,
+        "geotiff_scl_20m_mb": 0.01,
+        "geotiff_total_pair_mb": 5.87,
+        "compressed_npz_package_mb": 5.91
+      },
+      "visualization_path": "data/sample_rois\\diagnostic_delhi_ncr.png",
+      "read_or_alignment_errors": []
+    },
+    {
+      "scene_info": {
+        "scene_key": "punjab_ludhiana",
+        "name": "Punjab Ludhiana",
+        "split": "Train",
+        "category": "Agricultural",
+        "scene_id": "S2B_43RFP_20241207_0_L2A",
+        "mgrs_tile": "MGRS-43RFP",
+        "asset_urls": {
+          "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B02.tif",
+          "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B03.tif",
+          "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B04.tif",
+          "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B08.tif",
+          "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/SCL.tif"
+        }
+      },
+      "window_10m": {
+        "col_off": 1800,
+        "row_off": 1800,
+        "width": 1024,
+        "height": 1024
+      },
+      "window_20m": {
+        "col_off": 900,
+        "row_off": 900,
+        "width": 512,
+        "height": 512
+      },
+      "band_metadata": {
+        "B02": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B02.tif",
+          "http_status": 200,
+          "read_time_ms": 19269.3,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3382020.0
+          ],
+          "bounds": [
+            618000.0,
+            3371780.0,
+            628240.0,
+            3382020.0
+          ],
+          "min_val": 115,
+          "max_val": 11504,
+          "mean_val": 559.04,
+          "nodata_pixels": 0,
+          "nodata_pct": 0.0,
+          "valid_pixels": 1048576,
+          "valid_pct": 100.0
+        },
+        "B03": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B03.tif",
+          "http_status": 200,
+          "read_time_ms": 16157.4,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3382020.0
+          ],
+          "bounds": [
+            618000.0,
+            3371780.0,
+            628240.0,
+            3382020.0
+          ],
+          "min_val": 191,
+          "max_val": 10256,
+          "mean_val": 761.23,
+          "nodata_pixels": 0,
+          "nodata_pct": 0.0,
+          "valid_pixels": 1048576,
+          "valid_pct": 100.0
+        },
+        "B04": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B04.tif",
+          "http_status": 200,
+          "read_time_ms": 35450.2,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3382020.0
+          ],
+          "bounds": [
+            618000.0,
+            3371780.0,
+            628240.0,
+            3382020.0
+          ],
+          "min_val": 102,
+          "max_val": 8464,
+          "mean_val": 768.53,
+          "nodata_pixels": 0,
+          "nodata_pct": 0.0,
+          "valid_pixels": 1048576,
+          "valid_pct": 100.0
+        },
+        "B08": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/B08.tif",
+          "http_status": 200,
+          "read_time_ms": 18135.5,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32643",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            618000.0,
+            0.0,
+            -10.0,
+            3382020.0
+          ],
+          "bounds": [
+            618000.0,
+            3371780.0,
+            628240.0,
+            3382020.0
+          ],
+          "min_val": 193,
+          "max_val": 9816,
+          "mean_val": 1984.61,
+          "nodata_pixels": 0,
+          "nodata_pct": 0.0,
+          "valid_pixels": 1048576,
+          "valid_pct": 100.0
+        },
+        "SCL": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/43/R/FP/2024/12/S2B_43RFP_20241207_0_L2A/SCL.tif",
+          "http_status": 200,
+          "read_time_ms": 2599.7,
+          "shape": [
+            512,
+            512
+          ],
+          "dtype": "uint8",
+          "crs": "EPSG:32643",
+          "resolution": [
+            20.0,
+            20.0
+          ],
+          "transform": [
+            20.0,
+            0.0,
+            618000.0,
+            0.0,
+            -20.0,
+            3382020.0
+          ],
+          "bounds": [
+            618000.0,
+            3371780.0,
+            628240.0,
+            3382020.0
+          ]
+        }
+      },
+      "spatial_alignment": {
+        "all_10m_bands_aligned": true,
+        "crs_consistent": true,
+        "geographic_bounds_match": true,
+        "bounds_10m": [
+          618000.0,
+          3371780.0,
+          628240.0,
+          3382020.0
+        ],
+        "bounds_20m": [
+          618000.0,
+          3371780.0,
+          628240.0,
+          3382020.0
+        ]
+      },
+      "scl_quality_audit": {
+        "valid_surface_pixels": 262144,
+        "valid_surface_percentage": 100.0,
+        "total_cloud_and_shadow_pixels": 0,
+        "total_cloud_and_shadow_percentage": 0.0,
+        "breakdown": {
+          "no_data_class_0_pct": 0.0,
+          "saturated_class_1_pct": 0.0,
+          "cloud_shadow_class_3_pct": 0.0,
+          "medium_cloud_class_8_pct": 0.0,
+          "high_cloud_class_9_pct": 0.0,
+          "thin_cirrus_class_10_pct": 0.0
+        },
+        "passes_quality_threshold": true
+      },
+      "scl_class_histogram": {
+        "class_0_NO_DATA": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_1_SATURATED_OR_DEFECTIVE": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_2_DARK_AREA_PIXELS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        },
+        "class_3_CLOUD_SHADOWS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_4_VEGETATION": {
+          "count": 55394,
+          "percentage": 21.1311,
+          "is_valid": true
+        },
+        "class_5_NOT_VEGETATED": {
+          "count": 206636,
+          "percentage": 78.8254,
+          "is_valid": true
+        },
+        "class_6_WATER": {
+          "count": 114,
+          "percentage": 0.0435,
+          "is_valid": true
+        },
+        "class_7_UNCLASSIFIED": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        },
+        "class_8_CLOUD_MEDIUM_PROBABILITY": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_9_CLOUD_HIGH_PROBABILITY": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_10_THIN_CIRRUS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_11_SNOW_ICE": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        }
+      },
+      "measured_file_sizes_bytes": {
+        "geotiff_4band_10m": 5911981,
+        "geotiff_scl_20m": 21692,
+        "geotiff_total_pair": 5933673,
+        "compressed_npz_package": 5889766
+      },
+      "measured_file_sizes_mb": {
+        "geotiff_4band_10m_mb": 5.64,
+        "geotiff_scl_20m_mb": 0.02,
+        "geotiff_total_pair_mb": 5.66,
+        "compressed_npz_package_mb": 5.62
+      },
+      "visualization_path": "data/sample_rois\\diagnostic_punjab_ludhiana.png",
+      "read_or_alignment_errors": []
+    },
+    {
+      "scene_info": {
+        "scene_key": "tn_cauvery_delta",
+        "name": "Tamil Nadu Cauvery Delta",
+        "split": "Test",
+        "category": "Agricultural",
+        "scene_id": "S2B_44PKT_20250504_0_L2A",
+        "mgrs_tile": "MGRS-44PKT",
+        "asset_urls": {
+          "B02": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B02.tif",
+          "B03": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B03.tif",
+          "B04": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B04.tif",
+          "B08": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B08.tif",
+          "SCL": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/SCL.tif"
+        }
+      },
+      "window_10m": {
+        "col_off": 1800,
+        "row_off": 1800,
+        "width": 1024,
+        "height": 1024
+      },
+      "window_20m": {
+        "col_off": 900,
+        "row_off": 900,
+        "width": 512,
+        "height": 512
+      },
+      "band_metadata": {
+        "B02": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B02.tif",
+          "http_status": 200,
+          "read_time_ms": 4170.8,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32644",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            217980.0,
+            0.0,
+            -10.0,
+            1282020.0
+          ],
+          "bounds": [
+            217980.0,
+            1271780.0,
+            228220.0,
+            1282020.0
+          ],
+          "min_val": 0,
+          "max_val": 0,
+          "mean_val": 0.0,
+          "nodata_pixels": 1048576,
+          "nodata_pct": 100.0,
+          "valid_pixels": 0,
+          "valid_pct": 0.0
+        },
+        "B03": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B03.tif",
+          "http_status": 200,
+          "read_time_ms": 2096.0,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32644",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            217980.0,
+            0.0,
+            -10.0,
+            1282020.0
+          ],
+          "bounds": [
+            217980.0,
+            1271780.0,
+            228220.0,
+            1282020.0
+          ],
+          "min_val": 0,
+          "max_val": 0,
+          "mean_val": 0.0,
+          "nodata_pixels": 1048576,
+          "nodata_pct": 100.0,
+          "valid_pixels": 0,
+          "valid_pct": 0.0
+        },
+        "B04": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B04.tif",
+          "http_status": 200,
+          "read_time_ms": 1785.4,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32644",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            217980.0,
+            0.0,
+            -10.0,
+            1282020.0
+          ],
+          "bounds": [
+            217980.0,
+            1271780.0,
+            228220.0,
+            1282020.0
+          ],
+          "min_val": 0,
+          "max_val": 0,
+          "mean_val": 0.0,
+          "nodata_pixels": 1048576,
+          "nodata_pct": 100.0,
+          "valid_pixels": 0,
+          "valid_pct": 0.0
+        },
+        "B08": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/B08.tif",
+          "http_status": 200,
+          "read_time_ms": 2000.6,
+          "shape": [
+            1024,
+            1024
+          ],
+          "dtype": "uint16",
+          "crs": "EPSG:32644",
+          "resolution": [
+            10.0,
+            10.0
+          ],
+          "transform": [
+            10.0,
+            0.0,
+            217980.0,
+            0.0,
+            -10.0,
+            1282020.0
+          ],
+          "bounds": [
+            217980.0,
+            1271780.0,
+            228220.0,
+            1282020.0
+          ],
+          "min_val": 0,
+          "max_val": 0,
+          "mean_val": 0.0,
+          "nodata_pixels": 1048576,
+          "nodata_pct": 100.0,
+          "valid_pixels": 0,
+          "valid_pct": 0.0
+        },
+        "SCL": {
+          "asset_url": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/44/P/KT/2025/5/S2B_44PKT_20250504_0_L2A/SCL.tif",
+          "http_status": 200,
+          "read_time_ms": 1214.6,
+          "shape": [
+            512,
+            512
+          ],
+          "dtype": "uint8",
+          "crs": "EPSG:32644",
+          "resolution": [
+            20.0,
+            20.0
+          ],
+          "transform": [
+            20.0,
+            0.0,
+            217980.0,
+            0.0,
+            -20.0,
+            1282020.0
+          ],
+          "bounds": [
+            217980.0,
+            1271780.0,
+            228220.0,
+            1282020.0
+          ]
+        }
+      },
+      "spatial_alignment": {
+        "all_10m_bands_aligned": true,
+        "crs_consistent": true,
+        "geographic_bounds_match": true,
+        "bounds_10m": [
+          217980.0,
+          1271780.0,
+          228220.0,
+          1282020.0
+        ],
+        "bounds_20m": [
+          217980.0,
+          1271780.0,
+          228220.0,
+          1282020.0
+        ]
+      },
+      "scl_quality_audit": {
+        "valid_surface_pixels": 0,
+        "valid_surface_percentage": 0.0,
+        "total_cloud_and_shadow_pixels": 0,
+        "total_cloud_and_shadow_percentage": 0.0,
+        "breakdown": {
+          "no_data_class_0_pct": 100.0,
+          "saturated_class_1_pct": 0.0,
+          "cloud_shadow_class_3_pct": 0.0,
+          "medium_cloud_class_8_pct": 0.0,
+          "high_cloud_class_9_pct": 0.0,
+          "thin_cirrus_class_10_pct": 0.0
+        },
+        "passes_quality_threshold": false
+      },
+      "scl_class_histogram": {
+        "class_0_NO_DATA": {
+          "count": 262144,
+          "percentage": 100.0,
+          "is_valid": false
+        },
+        "class_1_SATURATED_OR_DEFECTIVE": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_2_DARK_AREA_PIXELS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        },
+        "class_3_CLOUD_SHADOWS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_4_VEGETATION": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        },
+        "class_5_NOT_VEGETATED": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        },
+        "class_6_WATER": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        },
+        "class_7_UNCLASSIFIED": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        },
+        "class_8_CLOUD_MEDIUM_PROBABILITY": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_9_CLOUD_HIGH_PROBABILITY": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_10_THIN_CIRRUS": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": false
+        },
+        "class_11_SNOW_ICE": {
+          "count": 0,
+          "percentage": 0.0,
+          "is_valid": true
+        }
+      },
+      "measured_file_sizes_bytes": {
+        "geotiff_4band_10m": 49291,
+        "geotiff_scl_20m": 1632,
+        "geotiff_total_pair": 50923,
+        "compressed_npz_package": 10090
+      },
+      "measured_file_sizes_mb": {
+        "geotiff_4band_10m_mb": 0.05,
+        "geotiff_scl_20m_mb": 0.0,
+        "geotiff_total_pair_mb": 0.05,
+        "compressed_npz_package_mb": 0.01
+      },
+      "visualization_path": "data/sample_rois\\diagnostic_tn_cauvery_delta.png",
+      "read_or_alignment_errors": []
+    }
+  ]
+}

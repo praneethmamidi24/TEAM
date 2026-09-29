@@ -1,0 +1,554 @@
+{
+  "model_metadata": {
+    "Candidate A": {
+      "name": "SEN2SRLite SPAN + HardConstraint",
+      "type": "Physically Constrained Deep Learning SR",
+      "backbone": "Split-Attention SPAB CNN (CNNSR 4->24->4, 6 blocks)",
+      "parameters": 572336,
+      "constraint": "Fourier-domain Low-Pass Sensor Conservation (HardConstraint)",
+      "output_guarantee": "Low-frequency Fourier components matched to LR input"
+    },
+    "Candidate B": {
+      "name": "Unconstrained CNNSR",
+      "type": "Pure End-to-End Deep Learning SR",
+      "backbone": "Split-Attention SPAB CNN (CNNSR 4->24->4, 6 blocks)",
+      "parameters": 572336,
+      "constraint": "None (unconstrained neural network prediction with non-negative reflectance clamp)",
+      "output_guarantee": "Data-driven spatial synthesis without frequency-domain override"
+    }
+  },
+  "scene_evaluations": {
+    "scene_138": {
+      "Candidate A": {
+        "mean_reliability": 0.9283451437950134,
+        "median_reliability": 0.9371017813682556,
+        "std_reliability": 0.054491471499204636,
+        "min_reliability": 0.03714549168944359,
+        "max_reliability": 0.9707075357437134,
+        "p10_reliability": 0.9079739451408386,
+        "p90_reliability": 0.9509603381156921,
+        "pct_above_threshold_093": 66.99960231781006,
+        "reconstruction_mean": 0.9242540001869202,
+        "spectral_mean": 0.8926609754562378,
+        "spatial_mean": 0.997972846031189,
+        "spatial_dir_mean": 0.9793725609779358,
+        "spatial_hf_mean": 0.9982728958129883,
+        "stability_mean": 0.9697810411453247,
+        "timings": {
+          "reconstruction_s": 0.14735126495361328,
+          "spectral_s": 0.13082051277160645,
+          "spatial_s": 1.549426794052124,
+          "stability_s": 8.279863119125366,
+          "total_reliability_s": 10.70681881904602
+        }
+      },
+      "Candidate B": {
+        "mean_reliability": 0.8324342370033264,
+        "median_reliability": 0.832893967628479,
+        "std_reliability": 0.0733785405755043,
+        "min_reliability": 0.0377691350877285,
+        "max_reliability": 0.9529266357421875,
+        "p10_reliability": 0.7618715763092041,
+        "p90_reliability": 0.9165245294570923,
+        "pct_above_threshold_093": 2.9752254486083984,
+        "reconstruction_mean": 0.7389614582061768,
+        "spectral_mean": 0.8228017091751099,
+        "spatial_mean": 0.9979901313781738,
+        "spatial_dir_mean": 0.9807279706001282,
+        "spatial_hf_mean": 0.9982702732086182,
+        "stability_mean": 0.9669375419616699,
+        "timings": {
+          "reconstruction_s": 0.21999239921569824,
+          "spectral_s": 0.09020805358886719,
+          "spatial_s": 1.8138399124145508,
+          "stability_s": 5.0778045654296875,
+          "total_reliability_s": 7.844983339309692
+        }
+      }
+    },
+    "scene_75": {
+      "Candidate A": {
+        "mean_reliability": 0.9362584352493286,
+        "median_reliability": 0.9426082372665405,
+        "std_reliability": 0.05238386616110802,
+        "min_reliability": 0.04531124234199524,
+        "max_reliability": 0.9634562730789185,
+        "p10_reliability": 0.9264768958091736,
+        "p90_reliability": 0.9521089792251587,
+        "pct_above_threshold_093": 86.09037399291992,
+        "reconstruction_mean": 0.9521369338035583,
+        "spectral_mean": 0.8856392502784729,
+        "spatial_mean": 0.9983141422271729,
+        "spatial_dir_mean": 0.995650589466095,
+        "spatial_hf_mean": 0.9983247518539429,
+        "stability_mean": 0.9739652872085571,
+        "timings": {
+          "reconstruction_s": 0.0897977352142334,
+          "spectral_s": 0.07879757881164551,
+          "spatial_s": 0.8168284893035889,
+          "stability_s": 8.30656123161316,
+          "total_reliability_s": 9.84010910987854
+        }
+      },
+      "Candidate B": {
+        "mean_reliability": 0.8554372787475586,
+        "median_reliability": 0.8555173873901367,
+        "std_reliability": 0.06383001059293747,
+        "min_reliability": 0.04474068060517311,
+        "max_reliability": 0.9520450830459595,
+        "p10_reliability": 0.8038208484649658,
+        "p90_reliability": 0.9199323654174805,
+        "pct_above_threshold_093": 3.1705141067504883,
+        "reconstruction_mean": 0.8055227398872375,
+        "spectral_mean": 0.810348391532898,
+        "spatial_mean": 0.9983159899711609,
+        "spatial_dir_mean": 0.995995819568634,
+        "spatial_hf_mean": 0.9983257055282593,
+        "stability_mean": 0.9745078682899475,
+        "timings": {
+          "reconstruction_s": 0.08954620361328125,
+          "spectral_s": 0.07537269592285156,
+          "spatial_s": 0.7803955078125,
+          "stability_s": 5.259019374847412,
+          "total_reliability_s": 6.865546941757202
+        }
+      }
+    }
+  },
+  "independent_signals": {
+    "scene_138": {
+      "Candidate A": {
+        "mare_mean": 0.006783599033951759,
+        "mare_p90": 0.010953713208436966,
+        "sam_mean_deg": 0.25572675466537476,
+        "sam_p90_deg": 0.39958450198173523,
+        "hf_energy_sr": 1.8520464436733164e-05,
+        "hf_energy_lr": 8.942766726249829e-06,
+        "hf_energy_ratio": 1.8627073275125137,
+        "edge_coherence": 0.7252596616744995
+      },
+      "Candidate B": {
+        "mare_mean": 0.022011015564203262,
+        "mare_p90": 0.04383647441864014,
+        "sam_mean_deg": 0.7606422901153564,
+        "sam_p90_deg": 1.178357720375061,
+        "hf_energy_sr": 1.9039089238503948e-05,
+        "hf_energy_lr": 8.942766726249829e-06,
+        "hf_energy_ratio": 1.9148683422531658,
+        "edge_coherence": 0.7341033220291138
+      }
+    },
+    "scene_75": {
+      "Candidate A": {
+        "mare_mean": 0.004652920179069042,
+        "mare_p90": 0.0061925435438752174,
+        "sam_mean_deg": 0.22456863522529602,
+        "sam_p90_deg": 0.3083765506744385,
+        "hf_energy_sr": 1.3621307516586967e-05,
+        "hf_energy_lr": 6.6530242293083575e-06,
+        "hf_energy_ratio": 1.7798594527405531,
+        "edge_coherence": 0.6414000391960144
+      },
+      "Candidate B": {
+        "mare_mean": 0.015825241804122925,
+        "mare_p90": 0.028255797922611237,
+        "sam_mean_deg": 0.8061254024505615,
+        "sam_p90_deg": 1.2373299598693848,
+        "hf_energy_sr": 1.369273832096951e-05,
+        "hf_energy_lr": 6.6530242293083575e-06,
+        "hf_energy_ratio": 1.7891931229658464,
+        "edge_coherence": 0.6495199203491211
+      }
+    }
+  },
+  "controlled_failures": {
+    "scene_138": {
+      "Candidate A": [
+        {
+          "candidate": "Candidate A",
+          "failure_type": "High-Frequency Ringing / Checkerboard",
+          "r_clean_patch": 0.9339947700500488,
+          "r_pert_patch": 0.6882234811782837,
+          "delta_r_patch": -0.24577128887176514,
+          "false_alarm_delta": 8.52346420288086e-06,
+          "primary_detector": "Spatial",
+          "primary_component_drop": -0.8684917092323303,
+          "comp_drops": {
+            "Reconstruction": 5.960464477539063e-08,
+            "Spectral": -5.960464477539062e-07,
+            "Spatial": -0.8684917092323303,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate A",
+          "failure_type": "Spectral Skew (NIR Drift)",
+          "r_clean_patch": 0.9339947700500488,
+          "r_pert_patch": 0.4646400809288025,
+          "delta_r_patch": -0.46935468912124634,
+          "false_alarm_delta": 5.441904067993164e-05,
+          "primary_detector": "Spectral",
+          "primary_component_drop": -0.588114321231842,
+          "comp_drops": {
+            "Reconstruction": -0.5603882074356079,
+            "Spectral": -0.588114321231842,
+            "Spatial": -1.5616416931152344e-05,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate A",
+          "failure_type": "Edge Displacement (Structural Misalignment)",
+          "r_clean_patch": 0.9339947700500488,
+          "r_pert_patch": 0.7902258634567261,
+          "delta_r_patch": -0.14376890659332275,
+          "false_alarm_delta": 2.7000904083251953e-05,
+          "primary_detector": "Reconstruction",
+          "primary_component_drop": -0.2472502589225769,
+          "comp_drops": {
+            "Reconstruction": -0.2472502589225769,
+            "Spectral": -0.12745124101638794,
+            "Spatial": -0.0022171735763549805,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate A",
+          "failure_type": "Radiometric Offset (Gain/Offset Shift)",
+          "r_clean_patch": 0.9339947700500488,
+          "r_pert_patch": 0.10877019166946411,
+          "delta_r_patch": -0.8252245783805847,
+          "false_alarm_delta": 7.921457290649414e-05,
+          "primary_detector": "Reconstruction",
+          "primary_component_drop": -0.9244602918624878,
+          "comp_drops": {
+            "Reconstruction": -0.9244602918624878,
+            "Spectral": -0.5536643862724304,
+            "Spatial": -0.005658507347106934,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate A",
+          "failure_type": "Gaussian Sensor Noise",
+          "r_clean_patch": 0.9339947700500488,
+          "r_pert_patch": 0.679735541343689,
+          "delta_r_patch": -0.25425922870635986,
+          "false_alarm_delta": 2.5451183319091797e-05,
+          "primary_detector": "Reconstruction",
+          "primary_component_drop": -0.3528655171394348,
+          "comp_drops": {
+            "Reconstruction": -0.3528655171394348,
+            "Spectral": -0.2051960825920105,
+            "Spatial": -0.2693096399307251,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate A",
+          "failure_type": "Zero-Mean High-Frequency Hallucination",
+          "r_clean_patch": 0.9339947700500488,
+          "r_pert_patch": 0.5772655010223389,
+          "delta_r_patch": -0.35672926902770996,
+          "false_alarm_delta": 3.409385681152344e-05,
+          "primary_detector": "Reconstruction",
+          "primary_component_drop": -0.6065489649772644,
+          "comp_drops": {
+            "Reconstruction": -0.6065489649772644,
+            "Spectral": -0.19672071933746338,
+            "Spatial": -0.000590205192565918,
+            "Stability": 0.0
+          },
+          "detected": true
+        }
+      ],
+      "Candidate B": [
+        {
+          "candidate": "Candidate B",
+          "failure_type": "High-Frequency Ringing / Checkerboard",
+          "r_clean_patch": 0.8559504747390747,
+          "r_pert_patch": 0.6307060718536377,
+          "delta_r_patch": -0.225244402885437,
+          "false_alarm_delta": 7.569789886474609e-06,
+          "primary_detector": "Spatial",
+          "primary_component_drop": -0.8684138059616089,
+          "comp_drops": {
+            "Reconstruction": 5.960464477539063e-08,
+            "Spectral": 5.364418029785156e-07,
+            "Spatial": -0.8684138059616089,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate B",
+          "failure_type": "Spectral Skew (NIR Drift)",
+          "r_clean_patch": 0.8559504747390747,
+          "r_pert_patch": 0.45162251591682434,
+          "delta_r_patch": -0.40432795882225037,
+          "false_alarm_delta": 4.5359134674072266e-05,
+          "primary_detector": "Spectral",
+          "primary_component_drop": -0.5056706666946411,
+          "comp_drops": {
+            "Reconstruction": -0.46276363730430603,
+            "Spectral": -0.5056706666946411,
+            "Spatial": -1.4424324035644531e-05,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate B",
+          "failure_type": "Edge Displacement (Structural Misalignment)",
+          "r_clean_patch": 0.8559504747390747,
+          "r_pert_patch": 0.756813645362854,
+          "delta_r_patch": -0.0991368293762207,
+          "false_alarm_delta": 2.002716064453125e-05,
+          "primary_detector": "Reconstruction",
+          "primary_component_drop": -0.14632195234298706,
+          "comp_drops": {
+            "Reconstruction": -0.14632195234298706,
+            "Spectral": -0.10067033767700195,
+            "Spatial": -0.0026394128799438477,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate B",
+          "failure_type": "Radiometric Offset (Gain/Offset Shift)",
+          "r_clean_patch": 0.8559504747390747,
+          "r_pert_patch": 0.09600695967674255,
+          "delta_r_patch": -0.7599435150623322,
+          "false_alarm_delta": 7.11679458618164e-05,
+          "primary_detector": "Reconstruction",
+          "primary_component_drop": -0.772156298160553,
+          "comp_drops": {
+            "Reconstruction": -0.772156298160553,
+            "Spectral": -0.527211606502533,
+            "Spatial": -0.005658328533172607,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate B",
+          "failure_type": "Gaussian Sensor Noise",
+          "r_clean_patch": 0.8559504747390747,
+          "r_pert_patch": 0.6606206893920898,
+          "delta_r_patch": -0.19532978534698486,
+          "false_alarm_delta": 1.7583370208740234e-05,
+          "primary_detector": "Spatial",
+          "primary_component_drop": -0.26907646656036377,
+          "comp_drops": {
+            "Reconstruction": -0.2314736247062683,
+            "Spectral": -0.16494262218475342,
+            "Spatial": -0.26907646656036377,
+            "Stability": 0.0
+          },
+          "detected": true
+        },
+        {
+          "candidate": "Candidate B",
+          "failure_type": "Zero-Mean High-Frequency Hallucination",
+          "r_clean_patch": 0.8559504747390747,
+          "r_pert_patch": 0.5741620659828186,
+          "delta_r_patch": -0.2817884087562561,
+          "false_alarm_delta": 2.47955322265625e-05,
+          "primary_detector": "Reconstruction",
+          "primary_component_drop": -0.4475816488265991,
+          "comp_drops": {
+            "Reconstruction": -0.4475816488265991,
+            "Spectral": -0.15414583683013916,
+            "Spatial": -0.0005576610565185547,
+            "Stability": 0.0
+          },
+          "detected": true
+        }
+      ]
+    }
+  },
+  "downstream_evaluations": {
+    "scene_138": {
+      "Candidate A": {
+        "has_urban": true,
+        "total_ref_pixels": 2722624,
+        "unfiltered": {
+          "precision": 0.9732722981179475,
+          "recall": 0.37484022766258773,
+          "f1_score": 0.5412327713172314,
+          "iou": 0.3710210313924451,
+          "false_positives": 28026
+        },
+        "vistaara_gated": {
+          "precision": 0.9997297419023008,
+          "recall": 0.30162629874698027,
+          "f1_score": 0.4634312834651685,
+          "iou": 0.3016017064496848,
+          "false_positives": 222,
+          "fp_reduction_pct": 99.20787839508999,
+          "delta_f1": -0.07780148785206287,
+          "delta_precision": 0.02645744378435333
+        }
+      },
+      "Candidate B": {
+        "has_urban": true,
+        "total_ref_pixels": 2722624,
+        "unfiltered": {
+          "precision": 0.9727973937979004,
+          "recall": 0.37465768317609244,
+          "f1_score": 0.540969051219169,
+          "iou": 0.37077321903424654,
+          "false_positives": 28524
+        },
+        "vistaara_gated": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "iou": 0.0,
+          "false_positives": 0,
+          "fp_reduction_pct": 99.99999999649418,
+          "delta_f1": -0.540969051219169,
+          "delta_precision": -0.9727973937979004
+        }
+      }
+    },
+    "scene_75": {
+      "Candidate A": {
+        "has_urban": true,
+        "total_ref_pixels": 2087616,
+        "unfiltered": {
+          "precision": 0.9400672912588691,
+          "recall": 0.4721807075628506,
+          "f1_score": 0.6286166803639421,
+          "iou": 0.4583819275873728,
+          "false_positives": 62844
+        },
+        "vistaara_gated": {
+          "precision": 0.9944144088672557,
+          "recall": 0.4333081371284598,
+          "f1_score": 0.6036012451408603,
+          "iou": 0.43225607911683717,
+          "false_positives": 5081,
+          "fp_reduction_pct": 91.91490038680041,
+          "delta_f1": -0.025015435223081806,
+          "delta_precision": 0.05434711760838662
+        }
+      },
+      "Candidate B": {
+        "has_urban": true,
+        "total_ref_pixels": 2087616,
+        "unfiltered": {
+          "precision": 0.9371318817129735,
+          "recall": 0.47070629847612266,
+          "f1_score": 0.6266537903368034,
+          "iou": 0.45629749742031195,
+          "false_positives": 65922
+        },
+        "vistaara_gated": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1_score": 0.0,
+          "iou": 0.0,
+          "false_positives": 0,
+          "fp_reduction_pct": 99.99999999848306,
+          "delta_f1": -0.6266537903368034,
+          "delta_precision": -0.9371318817129735
+        }
+      }
+    }
+  },
+  "task_fitness": {
+    "scene_138": {
+      "Candidate A": {
+        "Task 1: Biophysical / Radiometric Fidelity": 0.908457487821579,
+        "Task 2: Structural / Infrastructure Delineation": 0.974771535396576,
+        "Task 3: Balanced General-Purpose SR": 0.9283451437950134
+      },
+      "Candidate B": {
+        "Task 1: Biophysical / Radiometric Fidelity": 0.7808815836906433,
+        "Task 2: Structural / Infrastructure Delineation": 0.9368686199188232,
+        "Task 3: Balanced General-Purpose SR": 0.8324342370033264
+      }
+    },
+    "scene_75": {
+      "Candidate A": {
+        "Task 1: Biophysical / Radiometric Fidelity": 0.9188880920410156,
+        "Task 2: Structural / Infrastructure Delineation": 0.9817740440368653,
+        "Task 3: Balanced General-Purpose SR": 0.9362584352493286
+      },
+      "Candidate B": {
+        "Task 1: Biophysical / Radiometric Fidelity": 0.8079355657100677,
+        "Task 2: Structural / Infrastructure Delineation": 0.9526149034500122,
+        "Task 3: Balanced General-Purpose SR": 0.8554372787475586
+      }
+    }
+  },
+  "component_ablations": {
+    "scene_138": {
+      "Candidate A": {
+        "1-Factor (Reconstruction Only)": 0.9242540001869202,
+        "1-Factor (Spectral Only)": 0.8926609754562378,
+        "1-Factor (Spatial Only)": 0.997972846031189,
+        "1-Factor (Stability Only)": 0.9697810411453247,
+        "2-Factor (Recon + Spectral)": 0.9064744114875793,
+        "2-Factor (Spatial + Stability)": 0.9832683801651001,
+        "2-Factor (Recon + Spatial)": 0.9589383006095886,
+        "3-Factor (No Reconstruction)": 0.9457584619522095,
+        "3-Factor (No Spectral)": 0.9575713872909546,
+        "3-Factor (No Spatial)": 0.9182400703430176,
+        "3-Factor (No Stability)": 0.9237150549888611,
+        "4-Factor (Full VISTAARA Composite)": 0.9283451437950134
+      },
+      "Candidate B": {
+        "1-Factor (Reconstruction Only)": 0.7389614582061768,
+        "1-Factor (Spectral Only)": 0.8228017091751099,
+        "1-Factor (Spatial Only)": 0.9979901313781738,
+        "1-Factor (Stability Only)": 0.9669375419616699,
+        "2-Factor (Recon + Spectral)": 0.7771931886672974,
+        "2-Factor (Spatial + Stability)": 0.9818276166915894,
+        "2-Factor (Recon + Spatial)": 0.8553333878517151,
+        "3-Factor (No Reconstruction)": 0.9142690896987915,
+        "3-Factor (No Spectral)": 0.8728022575378418,
+        "3-Factor (No Spatial)": 0.8108750581741333,
+        "3-Factor (No Stability)": 0.8161483407020569,
+        "4-Factor (Full VISTAARA Composite)": 0.8324342370033264
+      }
+    },
+    "scene_75": {
+      "Candidate A": {
+        "1-Factor (Reconstruction Only)": 0.9521369338035583,
+        "1-Factor (Spectral Only)": 0.8856392502784729,
+        "1-Factor (Spatial Only)": 0.9983141422271729,
+        "1-Factor (Stability Only)": 0.9739652872085571,
+        "2-Factor (Recon + Spectral)": 0.9165105819702148,
+        "2-Factor (Spatial + Stability)": 0.9856457710266113,
+        "2-Factor (Recon + Spatial)": 0.9736133813858032,
+        "3-Factor (No Reconstruction)": 0.9442064762115479,
+        "3-Factor (No Spectral)": 0.9705544710159302,
+        "3-Factor (No Spatial)": 0.9272176027297974,
+        "3-Factor (No Stability)": 0.9320026636123657,
+        "4-Factor (Full VISTAARA Composite)": 0.9362584352493286
+      },
+      "Candidate B": {
+        "1-Factor (Reconstruction Only)": 0.8055227398872375,
+        "1-Factor (Spectral Only)": 0.810348391532898,
+        "1-Factor (Spatial Only)": 0.9983159899711609,
+        "1-Factor (Stability Only)": 0.9745078682899475,
+        "2-Factor (Recon + Spectral)": 0.8061186075210571,
+        "2-Factor (Spatial + Stability)": 0.9859240055084229,
+        "2-Factor (Recon + Spatial)": 0.8946563005447388,
+        "3-Factor (No Reconstruction)": 0.9109865427017212,
+        "3-Factor (No Spectral)": 0.9070796966552734,
+        "3-Factor (No Spatial)": 0.8365031480789185,
+        "3-Factor (No Stability)": 0.8407195210456848,
+        "4-Factor (Full VISTAARA Composite)": 0.8554372787475586
+      }
+    }
+  }
+}

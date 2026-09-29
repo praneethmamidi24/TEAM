@@ -1,0 +1,998 @@
+{
+  "inventory_title": "Authoritative Dataset Inventory for VISTAARA OCR-GSR Benchmark",
+  "created_at_utc": "2026-09-17T15:54:22Z",
+  "source_metadata_files": [
+    "deep_scene_validation_report.json",
+    "ocr_gsr_discovered_scenes.json",
+    "roi_extraction_validation.json",
+    "cauvery_three_roi_validation.json"
+  ],
+  "dataset_summary": {
+    "total_scenes": 14,
+    "scenes_per_split": {
+      "Train": 6,
+      "Validation": 4,
+      "Test": 4
+    },
+    "scenes_per_category": {
+      "Urban": 4,
+      "Agricultural": 4,
+      "Forest": 3,
+      "Water & Mixed": 3
+    },
+    "rois_per_scene": 3,
+    "total_planned_rois": 42,
+    "planned_rois_per_split": {
+      "Train": 18,
+      "Validation": 12,
+      "Test": 12
+    },
+    "all_mgrs_tiles_unique": true,
+    "physically_extracted_rois_count": 5,
+    "physically_extracted_rois_list": [
+      "Delhi NCR ROI 1 (row: 1800, col: 1800)",
+      "Punjab Ludhiana ROI 1 (row: 1800, col: 1800)",
+      "Tamil Nadu Cauvery Delta ROI 1 North (row: 1800, col: 8500)",
+      "Tamil Nadu Cauvery Delta ROI 2 Central (row: 5000, col: 7500)",
+      "Tamil Nadu Cauvery Delta ROI 3 South (row: 8000, col: 8000)"
+    ]
+  },
+  "scenes": [
+    {
+      "scene_index": 1,
+      "region_id": "URB_01_DELHI",
+      "scene_name": "Delhi NCR",
+      "split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43RFN",
+      "stac_item_id": "S2B_43RFN_20250324_0_L2A",
+      "acquisition_datetime": "2025-03-24T05:40:55.105000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        76.025058,
+        28.82234,
+        77.17093,
+        29.826404
+      ],
+      "eo_cloud_cover_pct": 0,
+      "scene_nodata_pct": 0,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "EXTRACTED_AND_VALIDATED",
+          "extraction_details": {
+            "status": "EXTRACTED_AND_VALIDATED",
+            "quality_gate": "PASSED",
+            "valid_surface_pct": 100.0,
+            "cloud_shadow_pct": 0.0,
+            "nodata_pct": 0.0,
+            "geotiff_total_pair_mb": 5.87,
+            "compressed_npz_mb": 5.91,
+            "extracted_window": {
+              "col_off": 1800,
+              "row_off": 1800,
+              "width": 1024,
+              "height": 1024
+            }
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 2,
+      "region_id": "URB_02_BLR",
+      "scene_name": "Bengaluru",
+      "split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43PGQ",
+      "stac_item_id": "S2B_43PGQ_20250206_0_L2A",
+      "acquisition_datetime": "2025-02-06T05:25:21.203000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        76.84054354907092,
+        12.560413606130458,
+        77.86185827663547,
+        13.560998223324514
+      ],
+      "eo_cloud_cover_pct": 9.8e-05,
+      "scene_nodata_pct": 1.451717,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 3,
+      "region_id": "URB_03_MUM",
+      "scene_name": "Mumbai MMR",
+      "split": "Validation",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QCB",
+      "stac_item_id": "S2B_43QCB_20250205_0_L2A",
+      "acquisition_datetime": "2025-02-05T05:53:42.615000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        73.09371286008928,
+        18.895343694175157,
+        73.55677666901256,
+        19.548341025988137
+      ],
+      "eo_cloud_cover_pct": 0,
+      "scene_nodata_pct": 77.054411,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 4,
+      "region_id": "URB_04_HYD",
+      "scene_name": "Hyderabad",
+      "split": "Test",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QHV",
+      "stac_item_id": "S2B_43QHV_20250328_0_L2A",
+      "acquisition_datetime": "2025-03-28T05:24:05.807000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        77.818432,
+        17.060059,
+        78.86956,
+        18.066726
+      ],
+      "eo_cloud_cover_pct": 0.000894,
+      "scene_nodata_pct": 2.367909,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 5,
+      "region_id": "AGR_01_PUNJAB",
+      "scene_name": "Punjab Ludhiana Plains",
+      "split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43RFP",
+      "stac_item_id": "S2B_43RFP_20241207_0_L2A",
+      "acquisition_datetime": "2024-12-07T05:50:33.298000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        76.03411852411334,
+        29.737919050206294,
+        76.57286682926289,
+        30.728857773305315
+      ],
+      "eo_cloud_cover_pct": 0,
+      "scene_nodata_pct": 65.669018,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "EXTRACTED_AND_VALIDATED",
+          "extraction_details": {
+            "status": "EXTRACTED_AND_VALIDATED",
+            "quality_gate": "PASSED",
+            "valid_surface_pct": 100.0,
+            "cloud_shadow_pct": 0.0,
+            "nodata_pct": 0.0,
+            "geotiff_total_pair_mb": 5.66,
+            "compressed_npz_mb": 5.62,
+            "extracted_window": {
+              "col_off": 1800,
+              "row_off": 1800,
+              "width": 1024,
+              "height": 1024
+            }
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 6,
+      "region_id": "AGR_02_MALWA",
+      "scene_name": "Madhya Pradesh Malwa",
+      "split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43QEF",
+      "stac_item_id": "S2B_43QEF_20250202_0_L2A",
+      "acquisition_datetime": "2025-02-02T05:42:39.646000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        74.9998138934438,
+        22.515156866422824,
+        76.0752208368034,
+        23.51054699653549
+      ],
+      "eo_cloud_cover_pct": 0,
+      "scene_nodata_pct": 0,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 7,
+      "region_id": "AGR_03_GODAVARI",
+      "scene_name": "Andhra Godavari Delta",
+      "split": "Validation",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44QNE",
+      "stac_item_id": "S2B_44QNE_20250213_0_L2A",
+      "acquisition_datetime": "2025-02-13T05:14:01.038000Z",
+      "crs_epsg": "EPSG:32644",
+      "bbox_wgs84": [
+        80.99982,
+        17.093969,
+        82.037455,
+        18.089061
+      ],
+      "eo_cloud_cover_pct": 0.000159,
+      "scene_nodata_pct": 0,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 8,
+      "region_id": "AGR_04_CAUVERY",
+      "scene_name": "Tamil Nadu Cauvery Delta",
+      "split": "Test",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44PKT",
+      "stac_item_id": "S2B_44PKT_20250504_0_L2A",
+      "acquisition_datetime": "2025-05-04T05:15:50.278000Z",
+      "crs_epsg": "EPSG:32644",
+      "bbox_wgs84": [
+        78.808486,
+        10.759298,
+        79.260379,
+        11.754695
+      ],
+      "eo_cloud_cover_pct": 0.000922,
+      "scene_nodata_pct": 66.16081,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 8500,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "EXTRACTED_AND_VALIDATED",
+          "extraction_details": {
+            "status": "EXTRACTED_AND_VALIDATED",
+            "quality_gate": "PASSED",
+            "valid_surface_pct": 100.0,
+            "cloud_shadow_pct": 0.0,
+            "nodata_pct": 0.0,
+            "geotiff_total_pair_mb": 5.79,
+            "compressed_npz_mb": 5.86,
+            "extracted_window": {
+              "row_off": 1800,
+              "col_off": 8500,
+              "width": 1024,
+              "height": 1024
+            }
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 5000,
+            "col_off": 7500,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "EXTRACTED_AND_VALIDATED",
+          "extraction_details": {
+            "status": "EXTRACTED_AND_VALIDATED",
+            "quality_gate": "PASSED",
+            "valid_surface_pct": 100.0,
+            "cloud_shadow_pct": 0.0,
+            "nodata_pct": 0.0,
+            "geotiff_total_pair_mb": 5.77,
+            "compressed_npz_mb": 5.78,
+            "extracted_window": {
+              "row_off": 5000,
+              "col_off": 7500,
+              "width": 1024,
+              "height": 1024
+            }
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8000,
+            "col_off": 8000,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "EXTRACTED_AND_VALIDATED",
+          "extraction_details": {
+            "status": "EXTRACTED_AND_VALIDATED",
+            "quality_gate": "PASSED",
+            "valid_surface_pct": 100.0,
+            "cloud_shadow_pct": 0.0,
+            "nodata_pct": 0.0,
+            "geotiff_total_pair_mb": 5.79,
+            "compressed_npz_mb": 5.82,
+            "extracted_window": {
+              "row_off": 8000,
+              "col_off": 8000,
+              "width": 1024,
+              "height": 1024
+            }
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 9,
+      "region_id": "FOR_01_WGHATS",
+      "scene_name": "Western Ghats Agumbe",
+      "split": "Train",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-43PER",
+      "stac_item_id": "S2C_43PER_20250224_0_L2A",
+      "acquisition_datetime": "2025-02-24T05:35:30.464000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        74.999824,
+        13.477978,
+        76.018619,
+        14.472821
+      ],
+      "eo_cloud_cover_pct": 1e-05,
+      "scene_nodata_pct": 0,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 10,
+      "region_id": "FOR_02_KANHA",
+      "scene_name": "Central India Kanha",
+      "split": "Validation",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-44QMK",
+      "stac_item_id": "S2B_44QMK_20250407_0_L2A",
+      "acquisition_datetime": "2025-04-07T05:22:44.341000Z",
+      "crs_epsg": "EPSG:32644",
+      "bbox_wgs84": [
+        80.026683,
+        21.612256,
+        81.094954,
+        22.607
+      ],
+      "eo_cloud_cover_pct": 0,
+      "scene_nodata_pct": 0,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 11,
+      "region_id": "FOR_03_ASSAM",
+      "scene_name": "Assam Kaziranga Buffer",
+      "split": "Test",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-46REQ",
+      "stac_item_id": "S2A_46REQ_20241228_0_L2A",
+      "acquisition_datetime": "2024-12-28T04:31:09.379000Z",
+      "crs_epsg": "EPSG:32646",
+      "bbox_wgs84": [
+        92.9998082889574,
+        26.12690347266134,
+        94.10759251416471,
+        27.122460612981637
+      ],
+      "eo_cloud_cover_pct": 0.00495,
+      "scene_nodata_pct": 0,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 12,
+      "region_id": "WAT_01_CHILIKA",
+      "scene_name": "Chilika Lake Lagoon",
+      "split": "Train",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QTB",
+      "stac_item_id": "S2B_45QTB_20250121_0_L2A",
+      "acquisition_datetime": "2025-01-21T05:03:15.378000Z",
+      "crs_epsg": "EPSG:32645",
+      "bbox_wgs84": [
+        84.1351021856522,
+        19.64006935956187,
+        85.18585899457699,
+        19.887144310206924
+      ],
+      "eo_cloud_cover_pct": 0,
+      "scene_nodata_pct": 87.0103,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 13,
+      "region_id": "WAT_02_SUNDAR",
+      "scene_name": "Sundarbans Estuary",
+      "split": "Validation",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QXD",
+      "stac_item_id": "S2B_45QXD_20250204_0_L2A",
+      "acquisition_datetime": "2025-02-04T04:42:48.147000Z",
+      "crs_epsg": "EPSG:32645",
+      "bbox_wgs84": [
+        88.67809197345018,
+        20.92062914898056,
+        89.02785138563014,
+        21.693136129886124
+      ],
+      "eo_cloud_cover_pct": 0,
+      "scene_nodata_pct": 81.135923,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    },
+    {
+      "scene_index": 14,
+      "region_id": "WAT_03_VEMBANAD",
+      "scene_name": "Vembanad Backwaters",
+      "split": "Test",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-43PFL",
+      "stac_item_id": "S2A_43PFL_20250105_0_L2A",
+      "acquisition_datetime": "2025-01-05T05:36:13.968000Z",
+      "crs_epsg": "EPSG:32643",
+      "bbox_wgs84": [
+        75.90967031013277,
+        8.958077861126245,
+        76.34586163718903,
+        9.950154705674878
+      ],
+      "eo_cloud_cover_pct": 0.00073,
+      "scene_nodata_pct": 67.736995,
+      "planned_rois_count": 3,
+      "rois": [
+        {
+          "roi_index": 1,
+          "description": "North-West Interior Window",
+          "pixel_coordinates": {
+            "row_off": 1800,
+            "col_off": 1800,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 2,
+          "description": "Central Interior Window",
+          "pixel_coordinates": {
+            "row_off": 4978,
+            "col_off": 4978,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        },
+        {
+          "roi_index": 3,
+          "description": "South-East Interior Window",
+          "pixel_coordinates": {
+            "row_off": 8156,
+            "col_off": 8156,
+            "width": 1024,
+            "height": 1024
+          },
+          "status": "PLANNED_PENDING_EXTRACTION",
+          "extraction_details": {
+            "message": "Metadata verified via STAC API; pixels not yet downloaded to preserve environment budget."
+          }
+        }
+      ]
+    }
+  ]
+}

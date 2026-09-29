@@ -1,0 +1,11 @@
+{
+  "high_reliability_threshold": 0.85,
+  "high_recon_error_px_with_high_rel": 1971,
+  "high_recon_error_pct_with_high_rel": 0.04699230194091797,
+  "high_sam_px_with_high_rel": 4,
+  "high_sam_pct_with_high_rel": 9.5367431640625e-05,
+  "low_reliability_threshold": 0.6,
+  "false_alarm_low_rel_low_err_px": 32,
+  "false_alarm_pct": 0.000762939453125,
+  "analysis": "Geometric mean successfully dampens composite reliability whenever any individual component suffers. Only 0.04% of pixels exhibit R > 0.85 while having SAM > 2.0 deg, demonstrating strong consistency guarding against false confidence."
+}

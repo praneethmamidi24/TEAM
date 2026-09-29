@@ -1,0 +1,25 @@
+Parameter,Value
+Input Scene,138.tif
+Native Dimensions,512x512
+Super-Resolved Dimensions,2048x2048
+Selected Task,Task A
+Candidate A M_recon,0.924254
+Candidate B M_recon,0.738961
+Candidate A M_spec,0.892661
+Candidate B M_spec,0.822802
+Candidate A M_spat,0.997973
+Candidate B M_spat,0.997990
+Candidate A M_stab,0.969781
+Candidate B M_stab,0.966938
+Candidate A Composite R,0.928345
+Candidate B Composite R,0.832434
+Candidate A High Coverage (R>=0.93),67.00%
+Candidate B High Coverage (R>=0.93),2.98%
+Candidate A Task A Fitness,0.908457
+Candidate B Task A Fitness,0.780881
+Candidate A Task B Fitness,0.974836
+Candidate B Task B Fitness,0.936863
+Candidate A Task C Fitness,0.928345
+Candidate B Task C Fitness,0.832434
+Recommended Candidate,Candidate A
+Urban Decision Gating FP Reduction,N/A

@@ -1,0 +1,35 @@
+{
+  "status": "inference_smoke_test_only",
+  "runtime_seconds": 0.4745837649998066,
+  "shapes": {
+    "sr_final": [
+      1,
+      4,
+      512,
+      512
+    ],
+    "reliability": [
+      1,
+      4,
+      512,
+      512
+    ],
+    "residual": [
+      1,
+      4,
+      512,
+      512
+    ],
+    "lr_up": [
+      1,
+      4,
+      512,
+      512
+    ]
+  },
+  "reliability_min": 0.4343092143535614,
+  "reliability_max": 0.5520535111427307,
+  "residual_mean_abs": 0.0,
+  "cycle_loss": 0.25507181882858276,
+  "finite": true
+}

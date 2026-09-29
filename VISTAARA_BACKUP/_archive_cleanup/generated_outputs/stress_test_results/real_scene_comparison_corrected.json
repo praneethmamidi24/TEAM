@@ -1,0 +1,36 @@
+[
+  {
+    "scene": "138.tif",
+    "recon_score": 0.9242540001869202,
+    "spectral_score": 0.8926609754562378,
+    "spatial_score": 0.997972846031189,
+    "spatial_hf_score": 0.9982728958129883,
+    "stability_score": 0.9697810411453247,
+    "nominal_sensitivity": 0.9672260284423828,
+    "composite_mean": 0.9283451437950134,
+    "composite_median": 0.9371017813682556,
+    "composite_min": 0.03714549168944359,
+    "composite_max": 0.9707075357437134,
+    "pct_lt_90": 6.911945343017578,
+    "pct_lt_75": 0.8074045181274414,
+    "pct_lt_50": 0.5858182907104492,
+    "runtime_s": 8.864889860153198
+  },
+  {
+    "scene": "75.tif",
+    "recon_score": 0.9521369338035583,
+    "spectral_score": 0.8856392502784729,
+    "spatial_score": 0.9983141422271729,
+    "spatial_hf_score": 0.9983247518539429,
+    "stability_score": 0.9739652872085571,
+    "nominal_sensitivity": 0.9629353284835815,
+    "composite_mean": 0.9362584352493286,
+    "composite_median": 0.9426082372665405,
+    "composite_min": 0.04531124234199524,
+    "composite_max": 0.9634562730789185,
+    "pct_lt_90": 1.7025232315063477,
+    "pct_lt_75": 0.7818460464477539,
+    "pct_lt_50": 0.585174560546875,
+    "runtime_s": 8.797101736068726
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "artifact_type": "Checkerboard Ringing (A=0.06, 400x400 px)",
+  "clean_inside_rel": 0.939558207988739,
+  "clean_outside_rel": 0.9279004335403442,
+  "artifact_inside_rel": 0.4842512309551239,
+  "artifact_outside_rel": 0.9278876781463623,
+  "delta_inside": -0.4553069770336151,
+  "delta_outside": -1.2755393981933594e-05,
+  "contrast_inside_vs_outside": -0.4436364471912384,
+  "hf_score_inside": 0.01210100669413805,
+  "hf_score_outside": 0.9981223344802856,
+  "localized_ringing_detected": true
+}

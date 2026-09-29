@@ -1,0 +1,849 @@
+{
+  "manifest_title": "Complete 42-ROI Dataset Manifest for VISTAARA OCR-GSR",
+  "generated_at_utc": "2026-09-17T17:08:52Z",
+  "total_rois": 42,
+  "total_passed": 29,
+  "total_rejected": 13,
+  "rois": [
+    {
+      "roi_uid": "URB_01_DELHI_ROI_1",
+      "region_id": "URB_01_DELHI",
+      "scene_name": "Delhi NCR",
+      "scene_split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43RFN",
+      "stac_item_id": "S2B_43RFN_20250324_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois/roi1_delhi_ncr_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois/roi1_delhi_ncr_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_01_DELHI_ROI_2",
+      "region_id": "URB_01_DELHI",
+      "scene_name": "Delhi NCR",
+      "scene_split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43RFN",
+      "stac_item_id": "S2B_43RFN_20250324_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_01_delhi_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_01_delhi_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_01_DELHI_ROI_3",
+      "region_id": "URB_01_DELHI",
+      "scene_name": "Delhi NCR",
+      "scene_split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43RFN",
+      "stac_item_id": "S2B_43RFN_20250324_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_01_delhi_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_01_delhi_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_02_BLR_ROI_1",
+      "region_id": "URB_02_BLR",
+      "scene_name": "Bengaluru",
+      "scene_split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43PGQ",
+      "stac_item_id": "S2B_43PGQ_20250206_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_02_blr_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_02_blr_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_02_BLR_ROI_2",
+      "region_id": "URB_02_BLR",
+      "scene_name": "Bengaluru",
+      "scene_split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43PGQ",
+      "stac_item_id": "S2B_43PGQ_20250206_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_02_blr_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_02_blr_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_02_BLR_ROI_3",
+      "region_id": "URB_02_BLR",
+      "scene_name": "Bengaluru",
+      "scene_split": "Train",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43PGQ",
+      "stac_item_id": "S2B_43PGQ_20250206_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_02_blr_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_02_blr_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_03_MUM_ROI_1",
+      "region_id": "URB_03_MUM",
+      "scene_name": "Mumbai MMR",
+      "scene_split": "Validation",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QCB",
+      "stac_item_id": "S2B_43QCB_20250205_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "URB_03_MUM_ROI_2",
+      "region_id": "URB_03_MUM",
+      "scene_name": "Mumbai MMR",
+      "scene_split": "Validation",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QCB",
+      "stac_item_id": "S2B_43QCB_20250205_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "URB_03_MUM_ROI_3",
+      "region_id": "URB_03_MUM",
+      "scene_name": "Mumbai MMR",
+      "scene_split": "Validation",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QCB",
+      "stac_item_id": "S2B_43QCB_20250205_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "URB_04_HYD_ROI_1",
+      "region_id": "URB_04_HYD",
+      "scene_name": "Hyderabad",
+      "scene_split": "Test",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QHV",
+      "stac_item_id": "S2B_43QHV_20250328_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_04_hyd_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_04_hyd_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_04_HYD_ROI_2",
+      "region_id": "URB_04_HYD",
+      "scene_name": "Hyderabad",
+      "scene_split": "Test",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QHV",
+      "stac_item_id": "S2B_43QHV_20250328_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_04_hyd_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_04_hyd_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "URB_04_HYD_ROI_3",
+      "region_id": "URB_04_HYD",
+      "scene_name": "Hyderabad",
+      "scene_split": "Test",
+      "category": "Urban",
+      "mgrs_tile": "MGRS-43QHV",
+      "stac_item_id": "S2B_43QHV_20250328_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\urb_04_hyd_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\urb_04_hyd_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_01_PUNJAB_ROI_1",
+      "region_id": "AGR_01_PUNJAB",
+      "scene_name": "Punjab Ludhiana Plains",
+      "scene_split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43RFP",
+      "stac_item_id": "S2B_43RFP_20241207_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois/roi1_punjab_ludhiana_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois/roi1_punjab_ludhiana_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_01_PUNJAB_ROI_2",
+      "region_id": "AGR_01_PUNJAB",
+      "scene_name": "Punjab Ludhiana Plains",
+      "scene_split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43RFP",
+      "stac_item_id": "S2B_43RFP_20241207_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "AGR_01_PUNJAB_ROI_3",
+      "region_id": "AGR_01_PUNJAB",
+      "scene_name": "Punjab Ludhiana Plains",
+      "scene_split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43RFP",
+      "stac_item_id": "S2B_43RFP_20241207_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "AGR_02_MALWA_ROI_1",
+      "region_id": "AGR_02_MALWA",
+      "scene_name": "Madhya Pradesh Malwa",
+      "scene_split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43QEF",
+      "stac_item_id": "S2B_43QEF_20250202_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\agr_02_malwa_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\agr_02_malwa_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_02_MALWA_ROI_2",
+      "region_id": "AGR_02_MALWA",
+      "scene_name": "Madhya Pradesh Malwa",
+      "scene_split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43QEF",
+      "stac_item_id": "S2B_43QEF_20250202_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\agr_02_malwa_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\agr_02_malwa_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_02_MALWA_ROI_3",
+      "region_id": "AGR_02_MALWA",
+      "scene_name": "Madhya Pradesh Malwa",
+      "scene_split": "Train",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-43QEF",
+      "stac_item_id": "S2B_43QEF_20250202_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\agr_02_malwa_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\agr_02_malwa_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_03_GODAVARI_ROI_1",
+      "region_id": "AGR_03_GODAVARI",
+      "scene_name": "Andhra Godavari Delta",
+      "scene_split": "Validation",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44QNE",
+      "stac_item_id": "S2B_44QNE_20250213_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\agr_03_godavari_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\agr_03_godavari_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_03_GODAVARI_ROI_2",
+      "region_id": "AGR_03_GODAVARI",
+      "scene_name": "Andhra Godavari Delta",
+      "scene_split": "Validation",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44QNE",
+      "stac_item_id": "S2B_44QNE_20250213_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\agr_03_godavari_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\agr_03_godavari_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_03_GODAVARI_ROI_3",
+      "region_id": "AGR_03_GODAVARI",
+      "scene_name": "Andhra Godavari Delta",
+      "scene_split": "Validation",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44QNE",
+      "stac_item_id": "S2B_44QNE_20250213_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\agr_03_godavari_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\agr_03_godavari_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_04_CAUVERY_ROI_1",
+      "region_id": "AGR_04_CAUVERY",
+      "scene_name": "Tamil Nadu Cauvery Delta",
+      "scene_split": "Test",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44PKT",
+      "stac_item_id": "S2B_44PKT_20250504_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 8500,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\cauvery_roi_1_north_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\cauvery_roi_1_north_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_04_CAUVERY_ROI_2",
+      "region_id": "AGR_04_CAUVERY",
+      "scene_name": "Tamil Nadu Cauvery Delta",
+      "scene_split": "Test",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44PKT",
+      "stac_item_id": "S2B_44PKT_20250504_0_L2A",
+      "roi_number": 2,
+      "row_off": 5000,
+      "col_off": 7500,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\cauvery_roi_2_central_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\cauvery_roi_2_central_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "AGR_04_CAUVERY_ROI_3",
+      "region_id": "AGR_04_CAUVERY",
+      "scene_name": "Tamil Nadu Cauvery Delta",
+      "scene_split": "Test",
+      "category": "Agricultural",
+      "mgrs_tile": "MGRS-44PKT",
+      "stac_item_id": "S2B_44PKT_20250504_0_L2A",
+      "roi_number": 3,
+      "row_off": 8000,
+      "col_off": 8000,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\cauvery_roi_3_south_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\cauvery_roi_3_south_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_01_WGHATS_ROI_1",
+      "region_id": "FOR_01_WGHATS",
+      "scene_name": "Western Ghats Agumbe",
+      "scene_split": "Train",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-43PER",
+      "stac_item_id": "S2C_43PER_20250224_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_01_wghats_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_01_wghats_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_01_WGHATS_ROI_2",
+      "region_id": "FOR_01_WGHATS",
+      "scene_name": "Western Ghats Agumbe",
+      "scene_split": "Train",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-43PER",
+      "stac_item_id": "S2C_43PER_20250224_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_01_wghats_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_01_wghats_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_01_WGHATS_ROI_3",
+      "region_id": "FOR_01_WGHATS",
+      "scene_name": "Western Ghats Agumbe",
+      "scene_split": "Train",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-43PER",
+      "stac_item_id": "S2C_43PER_20250224_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_01_wghats_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_01_wghats_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_02_KANHA_ROI_1",
+      "region_id": "FOR_02_KANHA",
+      "scene_name": "Central India Kanha",
+      "scene_split": "Validation",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-44QMK",
+      "stac_item_id": "S2B_44QMK_20250407_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_02_kanha_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_02_kanha_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_02_KANHA_ROI_2",
+      "region_id": "FOR_02_KANHA",
+      "scene_name": "Central India Kanha",
+      "scene_split": "Validation",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-44QMK",
+      "stac_item_id": "S2B_44QMK_20250407_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_02_kanha_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_02_kanha_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_02_KANHA_ROI_3",
+      "region_id": "FOR_02_KANHA",
+      "scene_name": "Central India Kanha",
+      "scene_split": "Validation",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-44QMK",
+      "stac_item_id": "S2B_44QMK_20250407_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_02_kanha_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_02_kanha_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_03_ASSAM_ROI_1",
+      "region_id": "FOR_03_ASSAM",
+      "scene_name": "Assam Kaziranga Buffer",
+      "scene_split": "Test",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-46REQ",
+      "stac_item_id": "S2A_46REQ_20241228_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_03_assam_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_03_assam_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_03_ASSAM_ROI_2",
+      "region_id": "FOR_03_ASSAM",
+      "scene_name": "Assam Kaziranga Buffer",
+      "scene_split": "Test",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-46REQ",
+      "stac_item_id": "S2A_46REQ_20241228_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_03_assam_roi_2_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_03_assam_roi_2_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "FOR_03_ASSAM_ROI_3",
+      "region_id": "FOR_03_ASSAM",
+      "scene_name": "Assam Kaziranga Buffer",
+      "scene_split": "Test",
+      "category": "Forest",
+      "mgrs_tile": "MGRS-46REQ",
+      "stac_item_id": "S2A_46REQ_20241228_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\for_03_assam_roi_3_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\for_03_assam_roi_3_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "WAT_01_CHILIKA_ROI_1",
+      "region_id": "WAT_01_CHILIKA",
+      "scene_name": "Chilika Lake Lagoon",
+      "scene_split": "Train",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QTB",
+      "stac_item_id": "S2B_45QTB_20250121_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "WAT_01_CHILIKA_ROI_2",
+      "region_id": "WAT_01_CHILIKA",
+      "scene_name": "Chilika Lake Lagoon",
+      "scene_split": "Train",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QTB",
+      "stac_item_id": "S2B_45QTB_20250121_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "WAT_01_CHILIKA_ROI_3",
+      "region_id": "WAT_01_CHILIKA",
+      "scene_name": "Chilika Lake Lagoon",
+      "scene_split": "Train",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QTB",
+      "stac_item_id": "S2B_45QTB_20250121_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "WAT_02_SUNDAR_ROI_1",
+      "region_id": "WAT_02_SUNDAR",
+      "scene_name": "Sundarbans Estuary",
+      "scene_split": "Validation",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QXD",
+      "stac_item_id": "S2B_45QXD_20250204_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "WAT_02_SUNDAR_ROI_2",
+      "region_id": "WAT_02_SUNDAR",
+      "scene_name": "Sundarbans Estuary",
+      "scene_split": "Validation",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QXD",
+      "stac_item_id": "S2B_45QXD_20250204_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "WAT_02_SUNDAR_ROI_3",
+      "region_id": "WAT_02_SUNDAR",
+      "scene_name": "Sundarbans Estuary",
+      "scene_split": "Validation",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-45QXD",
+      "stac_item_id": "S2B_45QXD_20250204_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "WAT_03_VEMBANAD_ROI_1",
+      "region_id": "WAT_03_VEMBANAD",
+      "scene_name": "Vembanad Backwaters",
+      "scene_split": "Test",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-43PFL",
+      "stac_item_id": "S2A_43PFL_20250105_0_L2A",
+      "roi_number": 1,
+      "row_off": 1800,
+      "col_off": 1800,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "PASSED",
+      "output_file_paths": {
+        "geotiff_10m": "data/sample_rois\\wat_03_vembanad_roi_1_10m_4band.tif",
+        "geotiff_scl": "data/sample_rois\\wat_03_vembanad_roi_1_20m_scl.tif"
+      }
+    },
+    {
+      "roi_uid": "WAT_03_VEMBANAD_ROI_2",
+      "region_id": "WAT_03_VEMBANAD",
+      "scene_name": "Vembanad Backwaters",
+      "scene_split": "Test",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-43PFL",
+      "stac_item_id": "S2A_43PFL_20250105_0_L2A",
+      "roi_number": 2,
+      "row_off": 4978,
+      "col_off": 4978,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    },
+    {
+      "roi_uid": "WAT_03_VEMBANAD_ROI_3",
+      "region_id": "WAT_03_VEMBANAD",
+      "scene_name": "Vembanad Backwaters",
+      "scene_split": "Test",
+      "category": "Water & Mixed",
+      "mgrs_tile": "MGRS-43PFL",
+      "stac_item_id": "S2A_43PFL_20250105_0_L2A",
+      "roi_number": 3,
+      "row_off": 8156,
+      "col_off": 8156,
+      "roi_height": 1024,
+      "roi_width": 1024,
+      "extraction_status": "EXTRACTED",
+      "validation_status": "REJECTED",
+      "output_file_paths": {
+        "geotiff_10m": null,
+        "geotiff_scl": null
+      }
+    }
+  ]
+}

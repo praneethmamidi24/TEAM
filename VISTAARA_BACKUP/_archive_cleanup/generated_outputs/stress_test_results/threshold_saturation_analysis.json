@@ -1,0 +1,48 @@
+{
+  "recon": {
+    "raw_error_percentiles": {
+      "p10": 0.14872127771377563,
+      "p50": 0.347179651260376,
+      "p90": 0.8445757031440735,
+      "p99": 2.5050694942474365
+    },
+    "score_percentiles": {
+      "p10": 0.8781759142875671,
+      "p50": 0.9405947923660278,
+      "p90": 0.9689744710922241
+    },
+    "tau_recon": 0.06,
+    "saturation_analysis": "Because the model has a Fourier hard constraint matching low frequencies, average relative error is only 0.61%. Under tau=0.06, exp(-0.0061/0.06)=0.90, concentrating scores between 0.85 and 0.98."
+  },
+  "spectral": {
+    "raw_sam_deg_percentiles": {
+      "p10": 0.42795848846435547,
+      "p50": 0.5051296949386597,
+      "p90": 0.615166962146759,
+      "p99": 0.9733169078826904
+    },
+    "score_percentiles": {
+      "p10": 0.8767598271369934,
+      "p50": 0.8945845365524292,
+      "p90": 0.9097920656204224
+    },
+    "tau_spectral_rad": 0.08,
+    "saturation_analysis": "Mean SAM angle is 0.52 deg (0.009 rad). Under tau=0.08 rad (4.6 deg), exp(-0.009/0.08)=0.89. The 4.6 deg tolerance allows slight spectral rotations without heavy penalties."
+  },
+  "spatial": {
+    "score_percentiles": {
+      "p10": 1.0,
+      "p50": 1.0,
+      "p90": 1.0
+    },
+    "saturation_analysis": "Gradient directional coherence is high (>0.97) on real terrain edges, and flat regions rarely exceed the ringing threshold (Msr - 2.5*Mlr), causing spatial scores to cluster at 0.998 on clean SR."
+  },
+  "stability": {
+    "score_percentiles": {
+      "p10": 1.0,
+      "p50": 1.0,
+      "p90": 1.0
+    },
+    "saturation_analysis": "Output sensitivity delta_out / sigma is ~0.97x (sub-linear). The formula clamps (sensitivity - 1.0) to min 0.0, causing exp(-0.0/tau) = 1.0000 identically across all pixels where sensitivity <= 1.0!"
+  }
+}
